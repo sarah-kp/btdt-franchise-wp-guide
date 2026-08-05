@@ -11,37 +11,33 @@
 :root{
   --kp-dark:#1F1B1B;
   --kp-mid:#24212D;
-  --kp-light:#F7F4FF;
-  --kp-accent:#29D9C2;
+  --kp-light:#EEEEEE;
+  --kp-accent:#1F79B8;
+  --kp-blue:#1F79B8;
   --text:#1F1B1B;
   --muted:#757190;
   --border:#E0DCE8;
   --sidebar:280px;
 }
 body{font-family:'nunito-sans',-apple-system,BlinkMacSystemFont,sans-serif;font-size:16px;line-height:1.7;color:var(--text);background:#fff}
-
 /* Header */
 .site-header{background:var(--kp-dark);color:#fff;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 .site-header .logo{display:flex;align-items:center;color:#fff;text-decoration:none;line-height:1}
 .site-header .logo svg{display:block;height:28px;width:auto}
 .site-header .doc-label{font-size:13px;color:rgba(255,255,255,.55);font-family:'nunito-sans',sans-serif}
-
 /* Layout */
 .layout{display:flex;min-height:calc(100vh - 53px)}
-
 /* Sidebar */
 .sidebar{width:var(--sidebar);min-width:var(--sidebar);background:var(--kp-light);border-right:1px solid var(--border);position:sticky;top:53px;height:calc(100vh - 53px);overflow-y:auto;padding:20px 0;font-family:'nunito-sans',sans-serif}
 .sidebar::-webkit-scrollbar{width:4px}
 .sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-.sidebar-label{display:block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);padding:18px 20px 5px;font-family:'nunito-sans',sans-serif}
+.sidebar-label{display:block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--kp-dark);padding:18px 20px 5px;font-family:'nunito-sans',sans-serif}
 .sidebar a{display:block;padding:5px 20px;font-size:13px;color:var(--text);text-decoration:none;line-height:1.4;border-left:3px solid transparent;transition:all .12s;font-family:'nunito-sans',sans-serif}
-.sidebar a:hover{background:rgba(41,217,194,.08);color:var(--kp-mid);border-left-color:var(--kp-accent)}
-.sidebar a.active{background:rgba(41,217,194,.12);color:var(--kp-mid);border-left-color:var(--kp-accent);font-weight:700}
-.sidebar a.sub{padding-left:32px;font-size:12.5px;color:var(--muted)}
-
+.sidebar a:hover{background:#000;color:#fff;border-left-color:var(--kp-accent)}
+.sidebar a.active{background:rgba(31,121,184,.12);color:var(--kp-dark);border-left-color:var(--kp-accent);font-weight:700}
+.sidebar a.sub{padding-left:32px;font-size:12.5px;color:var(--kp-dark)}
 /* Main */
 .main{flex:1;padding:48px 64px;max-width:1060px}
-
 /* Typography */
 h1{font-family:'roc-grotesk',sans-serif;font-size:32px;font-weight:700;color:var(--kp-dark);line-height:1.2;margin-bottom:12px;letter-spacing:-.3px}
 h2{font-family:'roc-grotesk',sans-serif;font-size:24px;font-weight:700;color:var(--kp-dark);margin-top:56px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);letter-spacing:-.1px}
@@ -49,65 +45,51 @@ h3{font-size:17px;font-weight:700;color:var(--text);margin-top:32px;margin-botto
 h4{font-size:15px;font-weight:700;color:var(--text);margin-top:22px;margin-bottom:8px}
 h5{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-top:18px;margin-bottom:6px}
 p{margin-bottom:14px}
-a{color:var(--kp-mid);text-underline-offset:2px}
-a:hover{color:var(--kp-accent)}
+a{color:var(--text);text-decoration:underline;text-underline-offset:2px}
+a:hover{color:var(--text);text-decoration:none}
 ul,ol{margin:10px 0 14px 22px}
 li{margin-bottom:5px}
 strong{font-weight:700}
-
 /* Code */
-code{font-family:'SF Mono',Consolas,'Courier New',monospace;font-size:12.5px;background:#EFECF7;border:1px solid var(--border);padding:2px 6px;border-radius:4px;color:var(--kp-mid)}
-.code-block{background:#1F1B1B;color:#A8F0E8;padding:16px 20px;border-radius:8px;font-family:'SF Mono',Consolas,monospace;font-size:13px;line-height:1.6;margin:14px 0;overflow-x:auto;white-space:pre}
-
+code{font-family:'SF Mono',Consolas,'Courier New',monospace;font-size:12.5px;background:var(--kp-light);border:1px solid var(--border);padding:2px 6px;border-radius:4px;color:var(--kp-mid)}
+.code-block{background:#B5FFF5;color:var(--kp-dark);padding:16px 20px;border-radius:8px;font-family:'SF Mono',Consolas,monospace;font-size:13px;line-height:1.6;margin:14px 0;overflow-x:auto;white-space:pre}
 /* Callouts */
-.note{background:#FEF9EC;border-left:4px solid #F5C842;padding:13px 16px;margin:18px 0;border-radius:0 6px 6px 0;font-size:14px}
-.note strong{display:block;margin-bottom:3px;color:#92700A}
+.note{background:#FCEEEF;border-left:4px solid #DB4553;padding:13px 16px;margin:18px 0;border-radius:0 6px 6px 0;font-size:14px}
+.note strong{display:block;margin-bottom:3px;color:#DB4553}
 .warning{background:#FEF2F2;border-left:4px solid #EF4444;padding:13px 16px;margin:18px 0;border-radius:0 6px 6px 0;font-size:14px}
 .warning strong{display:block;margin-bottom:3px;color:#B91C1C}
-.tip{background:#EDFCF9;border-left:4px solid var(--kp-accent);padding:13px 16px;margin:18px 0;border-radius:0 6px 6px 0;font-size:14px}
+.tip{background:#EEF6FC;border-left:4px solid var(--kp-accent);padding:13px 16px;margin:18px 0;border-radius:0 6px 6px 0;font-size:14px}
 .tip strong{display:block;margin-bottom:3px;color:var(--kp-mid)}
-
 /* Image placeholder */
 .img-ph{background:var(--kp-light);border:1.5px dashed #C8C3D8;border-radius:6px;padding:18px;margin:14px 0;text-align:center;color:var(--muted);font-size:12.5px;font-style:italic}
 .img-ph::before{content:"📸 ";font-style:normal}
-
 /* Tables */
 table{width:100%;border-collapse:collapse;margin:18px 0;font-size:13.5px}
 th{background:var(--kp-dark);color:#fff;padding:9px 13px;text-align:left;font-weight:700;font-size:12.5px}
 td{padding:8px 13px;border-bottom:1px solid var(--border);vertical-align:top}
 tr:nth-child(even) td{background:var(--kp-light)}
-
 /* Hero */
 .hero{background:var(--kp-light);border-radius:12px;padding:36px 44px;margin-bottom:44px}
-.hero .eyebrow{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--kp-accent);margin-bottom:10px;font-family:'nunito-sans',sans-serif}
+.hero .eyebrow{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--kp-blue);margin-bottom:10px;font-family:'nunito-sans',sans-serif}
 .hero p{color:var(--muted);font-size:15px;max-width:480px;margin-bottom:0}
-
 /* Anchor offset */
 .anc{display:block;height:76px;margin-top:-76px;visibility:hidden}
-
 /* Divider */
 hr{border:none;border-top:1px solid var(--border);margin:36px 0}
-
 /* Block tag */
 .block-tag{display:inline-block;font-size:11px;font-weight:700;background:var(--kp-dark);color:#fff;padding:2px 8px;border-radius:4px;margin-bottom:6px;letter-spacing:.03em;font-family:'nunito-sans',sans-serif}
-
 @media(max-width:900px){.sidebar{display:none}.main{padding:32px 20px}}
 @media print{.sidebar,.site-header{display:none}.main{padding:0}}
 </style>
 </head>
 <body>
-
 <header class="site-header">
   <a href="#" class="logo" aria-label="Kick Point">
-    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="42" fill="none" viewBox="0 0 53 42">
-      <path fill="currentColor" d="M13.6 28q-.2-.9-.9-1.8a4 4 0 0 0-3.2-1.3 5 5 0 0 0-3.1 1.3l-.8.8-.3-1-.3-.4-.6-.1H2.1l-.4.1c-1 0-1.7 1.2-1.7 1.2S.7 28 1.7 28h.4v14l3.7-.2V37q.6.5 1.2.7.7.3 1.7.1a5 5 0 0 0 2.1-.7q1-.7 1.7-1.5.8-1 1.1-2.2.4-1.4.4-2.7t-.4-2.6M10 33l-.5 1.2a2 2 0 0 1-1.7 1l-1-.1q-.6-.1-1-.6v-5.3l.5-.5 1.1-.7.8-.2.8.2q.3 0 .6.5l.4 1q.2.9.1 1.7zm17-7q-.4-1-1.3-1.7t-2-1a8 8 0 0 0-5.2.8q-1 .7-2 1.7-.8.9-1.3 2.2a8 8 0 0 0 0 5.3q.4 1 1.3 1.8t2 1q1.4.3 2.6 0 1.5-.1 2.6-.8a7 7 0 0 0 3.3-3.9 8 8 0 0 0 0-5.3m-4 6.2q-.6.9-1.9 1.2t-1.9-.6q-.6-.7-.6-2.7 0-1.8.6-2.8t2-1.2q1.2-.3 1.8.6t.6 2.6q0 1.9-.6 2.9m5.4-9.9 3.7-.6V34l-3.7.6zm15.9.4q.3.9.2 1.9v7.9q-1.8 0-3.7.4v-8q0-.8-.4-1.3t-1.2-.4q-.7 0-1.2.5l-1 .8v8.9l-3.7.5V21.5l2.8-.3.4.4.2.7 1.6-1.3q1-.6 2-.7a4 4 0 0 1 1.8.1q.8.3 1.3.9t.9 1.4m8.4 8.5-1.6.8-1.9.3-1.6-.2q-.6 0-1.1-.6t-.7-1.1l-.3-1.5v-9.6l2-3.1 1.8-.1v3.6h1.2c1 0 1.8 1.1 1.8 1.1s-.7 1.2-1.8 1.2h-1.2v6.4q0 .4.2.7l.6.3.6-.1.2-.1h.4l.2.2zm-42-15.4 3.6 5.5-4.1.4-.5-.4L7 16.7H5.8v5.5l-3.7.2V6.8h-.4C.7 6.8 6s.7-1.1 1.7-1.2h.4l3.7-.1v10l1.1-.1.4-.4L10 9.6l.7-.3 3.4-.4-3.7 5.4-.6.5zm4.3-7 3.8-.6v12.5l-3.8.5zM29.6 18a8 8 0 0 1-4 1.8q-1 .1-2.1-.1-1-.3-1.8-1T20.4 17a8 8 0 0 1 0-5.2 7 7 0 0 1 3-3.9 8 8 0 0 1 5.3-1 5 5 0 0 1 2 1.1l-1 1.5-.3.4-.4.2h-.5l-.5-.3-.7-.2h-.9l-1.2.5q-.5.3-.8.9l-.4 1-.1 1.5q0 1.8.7 2.7.6.7 1.9.6a3 3 0 0 0 1.6-.8l.5-.4.6-.3q.4 0 .7.2l1 1.2q-.4.7-1.2 1.2M29.5 2S30.1.8 31.1.6h.4l3.7-.6v10h.6q.3 0 .5-.2.3 0 .4-.4l2.8-4.3.7-.3 3.4-.3L40 9.9l-.6.5q.6.3 1 1l3.5 5.5-4.1.3-.5-.4-2.7-4.4h-1.3V18l-3.7.6V3h-.4c-1 .2-1.7-.9-1.7-.9M15.1 6.3v-.7A1.5 1.5 0 0 1 16.3 4l1.4-.2q1.1 0 1.2 1v.8A2 2 0 0 1 17.7 7l-1.8.2a1 1 0 0 1-.8-1"/>
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.33 367.14"><title>KP-Logo-RGB</title><path d="M119.27,245.47A47.77,47.77,0,0,0,111,229a31.17,31.17,0,0,0-12.49-9.43,32.71,32.71,0,0,0-15.74-2.1,47.21,47.21,0,0,0-19.37,6.09,52,52,0,0,0-7.77,5.47,64.48,64.48,0,0,0-6.77,6.76c-.8-2.61-1.61-5.21-2.41-7.82a6.68,6.68,0,0,0-2.88-3.92,8.72,8.72,0,0,0-5.09-1.1l-1.8.1c-6.12.29-12.24.53-18.36.68l-3.23.08C5.75,224,0,234.45,0,234.45s5.75,10.47,15.12,10.27c1.05,0,2.13,0,3.23-.06V367.14q16.27-.43,32.55-1.51V323.86a34.16,34.16,0,0,0,10.49,5.75c3.84,1.31,8.61,1.71,14.27,1.19a43.51,43.51,0,0,0,19-6.22,51.43,51.43,0,0,0,14.69-13.67,66.45,66.45,0,0,0,9.55-19.26,76.59,76.59,0,0,0,3.41-23.1A80.53,80.53,0,0,0,119.27,245.47ZM87.1,288a33.84,33.84,0,0,1-4.35,10.67A19.33,19.33,0,0,1,76.18,305a20.08,20.08,0,0,1-8.28,2.53,23.84,23.84,0,0,1-9-.92,18.32,18.32,0,0,1-8-5.14V255.32a54.39,54.39,0,0,1,4.18-4.74A22.66,22.66,0,0,1,59.66,247,26.57,26.57,0,0,1,65,244.67a30.88,30.88,0,0,1,6.46-1.23,15.22,15.22,0,0,1,7,.93A11.86,11.86,0,0,1,83.9,249a27,27,0,0,1,3.52,9.14,68.61,68.61,0,0,1,1.25,14.35A66.23,66.23,0,0,1,87.1,288Zm150-60.18a39.71,39.71,0,0,0-11.35-15.65A40.22,40.22,0,0,0,208.26,204a61,61,0,0,0-22.56-.15,72.61,72.61,0,0,0-22.72,7.5,63.26,63.26,0,0,0-17.64,13.78,60.26,60.26,0,0,0-11.43,19.2,67.91,67.91,0,0,0-4,23.82,60,60,0,0,0,4,22.89,40.91,40.91,0,0,0,11.43,16.11A41.45,41.45,0,0,0,163,315.74a59.14,59.14,0,0,0,22.72.32,68.88,68.88,0,0,0,22.56-7.67,62.2,62.2,0,0,0,28.82-33.84,70.33,70.33,0,0,0,4-24.14Q241.11,237.51,237.08,227.84Zm-34.85,53.43c-3.53,5.87-9,9.44-16.53,10.65-7.7,1.26-13.32-.5-16.89-5.23s-5.36-12.46-5.36-23.25,1.79-19.06,5.36-24.86S178,229.27,185.7,228q11.24-1.83,16.53,5.14t5.3,23.15Q207.53,272.47,202.23,281.27Zm46.69-86.34q16.26-2.75,32.54-5.4V298.37c-10.85,1.75-21.7,3.57-32.54,5.39Zm138.84,3.52a52.19,52.19,0,0,1,2.42,16.31v69.16q-16.26,1.49-32.53,3.45V218.22q0-8-3.68-12t-10.8-3.09a25,25,0,0,0-10.09,3.66,47.83,47.83,0,0,0-9,7.46v77.56q-16.27,2.32-32.54,4.93V187.91q10.07-1.6,20.15-3.11a8.26,8.26,0,0,1,5.09.61,6,6,0,0,1,2.88,3.68l1.89,6c2.1-2.26,4.27-4.38,6.51-6.39a46.93,46.93,0,0,1,7.18-5.24,46.54,46.54,0,0,1,18-6.07A35.34,35.34,0,0,1,369,178.64a28,28,0,0,1,11.6,7.38A32.77,32.77,0,0,1,387.76,198.45Zm73.57,74.08a47,47,0,0,1-14.16,7.23,61.53,61.53,0,0,1-16.26,2.87,39.28,39.28,0,0,1-13.71-1.58,25.23,25.23,0,0,1-10-5.76,24.81,24.81,0,0,1-6.15-9.57,37.67,37.67,0,0,1-2.09-13V168.92q8.6-13.92,17.2-27.65c5.11-.31,10.22-.56,15.34-.78v31.59c3.54-.15,7.47-.28,11-.37,9.36-.25,15.12,10.22,15.12,10.21s-5.76,10.43-15.12,10.66c-3.52.11-7.45.23-11,.38V248.6a9.88,9.88,0,0,0,1.83,6.17,6,6,0,0,0,5.3,2.28,10.53,10.53,0,0,0,3-.45,12.25,12.25,0,0,0,2.1-.9c.6-.33,1.16-.63,1.69-.88a4.33,4.33,0,0,1,1.83-.4,3.67,3.67,0,0,1,2.36.64,8.54,8.54,0,0,1,1.84,2.11Q456.41,264.82,461.33,272.53ZM95,138.29q15.32,24.33,30.65,48.29-14.7,2-29.39,3.62a14.35,14.35,0,0,1-6.35-.51,8.18,8.18,0,0,1-4.36-3.8Q75.25,167.68,65,149.26a7.24,7.24,0,0,0-3-3.16,10.7,10.7,0,0,0-4.72-.43q-3.15.24-6.29.44v48.17q-16.27,1.08-32.55,1.51V59.57l-3.23.08C5.75,59.84,0,49.35,0,49.35S5.75,39,15.12,38.77l3.23-.09c6.12-.15,12.24-.39,18.36-.68q7.09-.36,14.19-.83v88.05c1.6-.1,3.21-.21,4.81-.33a10.85,10.85,0,0,0,4.67-1.18,9.77,9.77,0,0,0,3.1-3.28q10.29-16.16,20.57-32.52a13.18,13.18,0,0,1,4.25-4.42,14.91,14.91,0,0,1,6.25-1.93q14.91-1.65,29.8-3.64Q110.3,99.16,96.23,120.1a35.78,35.78,0,0,1-4.36,5.31,41,41,0,0,1-5.09,4.3A27.56,27.56,0,0,1,95,138.29Zm37.4-61.46c10.84-1.49,21.69-3.11,32.54-4.78V180.87q-16.28,2.52-32.54,4.8Zm126.52,80.84a67.61,67.61,0,0,1-11.38,7.58,69.42,69.42,0,0,1-11.7,4.81,95,95,0,0,1-11.45,2.73,46.35,46.35,0,0,1-19-.57,37.49,37.49,0,0,1-16-8.32A42,42,0,0,1,178.45,148q-4-9.82-4-23.29a72.49,72.49,0,0,1,3.51-22.54,60.49,60.49,0,0,1,27.4-34,68.1,68.1,0,0,1,23.46-8.27q12.79-2.15,22.46.31a43.07,43.07,0,0,1,17.42,9l-8.61,12.87a23.33,23.33,0,0,1-2.84,3.32,7.46,7.46,0,0,1-3.88,1.7,7.76,7.76,0,0,1-4.35-.43l-4.36-1.84A28.6,28.6,0,0,0,239,83.2a23.58,23.58,0,0,0-8.08.22,25.6,25.6,0,0,0-10.34,4,24.41,24.41,0,0,0-7.19,7.5,34.17,34.17,0,0,0-4.2,10.74,62.91,62.91,0,0,0-1.37,13.61q0,15.63,6,23t16.63,5.57a26,26,0,0,0,9-2.94,34.21,34.21,0,0,0,5.61-4.09c1.55-1.42,3-2.72,4.25-3.93a9.33,9.33,0,0,1,4.89-2.29c2.58-.42,4.54.19,5.87,1.86l9.45,10.07A66.21,66.21,0,0,1,258.89,157.67ZM257,18.6s5.76-11.41,15.12-12.95c1.05-.16,2.14-.35,3.24-.53q9.17-1.5,18.36-2.94Q300.81,1.05,307.9,0V88.05l4.83-.73a11.72,11.72,0,0,0,4.67-1.52,10.94,10.94,0,0,0,3.1-3.49q10.28-16.82,20.56-33.49a13.64,13.64,0,0,1,4.26-4.54,15,15,0,0,1,6.24-2.05q14.93-1.83,29.81-3.31Q367.3,59.65,353.25,80.76a36.88,36.88,0,0,1-4.36,5.36,42.2,42.2,0,0,1-5.09,4.43A26.39,26.39,0,0,1,352,99q15.33,24.15,30.64,48.67-14.7,1.43-29.38,3.22a14.47,14.47,0,0,1-6.35-.4,7.86,7.86,0,0,1-4.36-3.7Q332.25,128.84,322,111.06a6.34,6.34,0,0,0-3-3,10.18,10.18,0,0,0-4.72-.09l-6.3.94v48.15q-16.26,2.46-32.53,5.14V26c-1.1.19-2.19.37-3.24.53C262.77,28.08,257,18.6,257,18.6ZM131.83,54.7V48.52A13.07,13.07,0,0,1,142.8,36q5.83-.86,11.67-1.73c6.06-.9,11,3.23,11,9.3v6.19a13.25,13.25,0,0,1-11,12.64q-5.83.89-11.67,1.72A9.29,9.29,0,0,1,131.83,54.7Z" fill="currentColor"/></svg>
   </a>
   <span class="doc-label">WordPress Test</span>
 </header>
-
 <div class="layout">
-
 <!-- ── SIDEBAR ── -->
 <nav class="sidebar">
   <span class="sidebar-label">Getting Started</span>
@@ -121,7 +103,6 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <a class="sub" href="#pillar">Pillar Pages</a>
   <a class="sub" href="#parent-page">Setting a Parent Page</a>
   <a class="sub" href="#seo">Adding SEO</a>
-
   <span class="sidebar-label">Content Blocks</span>
   <a href="#block-guide">Content Block Guide</a>
   <a class="sub" href="#add-block">Adding a Block</a>
@@ -130,17 +111,14 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <a class="sub" href="#link-popup">The Link Pop-up</a>
   <a class="sub" href="#blocks-ref">All Content Blocks</a>
   <a class="sub" href="#tables">Adding a Table</a>
-
   <span class="sidebar-label">Settings</span>
   <a href="#block-settings">Block Settings</a>
   <a href="#page-settings">Page Settings</a>
   <a href="#button-shortcode">Adding a Button</a>
   <a href="#theme-settings">Theme Settings</a>
-
   <span class="sidebar-label">Navigation &amp; Forms</span>
   <a href="#menus">Header &amp; Footer Menus</a>
   <a href="#forms">Forms</a>
-
   <span class="sidebar-label">Appendix</span>
   <a href="#dashboard">The Dashboard</a>
   <a href="#content-editor">Content Editor</a>
@@ -151,49 +129,37 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <a href="#links-by-hand">Adding Links By Hand</a>
   <a href="#redirects">Redirects</a>
 </nav>
-
 <!-- ── MAIN CONTENT ── -->
 <main class="main">
-
 <div class="hero">
   <div class="eyebrow">WordPress Guide</div>
   <h1>Bin There Dump That Franchise Site</h1>
   <p>Everything you need to manage and update your WordPress website, prepared for you by Kick Point.</p>
 </div>
-
 <!-- ═══════════════════════════ LOGGING IN ═══════════════════════════ -->
 <span id="logging-in" class="anc"></span>
 <h2>Logging In to WordPress</h2>
-
 <p>To access your <strong>staging</strong> admin, go to: <strong><a href="https://btdtfranchstg.wpenginepowered.com/wp-admin/" target="_blank">https://btdtfranchstg.wpenginepowered.com/wp-admin/</a></strong></p>
-
 <p>For the <strong>live site</strong>, log in at: <strong><a href="https://bintheredumpthatfranchise.com/" target="_blank">https://bintheredumpthatfranchise.com/</a></strong></p>
-
 <!-- ═══════════════════════════ BASICS ═══════════════════════════ -->
 <span id="basics" class="anc"></span>
 <h2>Adding/Editing Content: Basics</h2>
-
 <span id="editing-existing" class="anc"></span>
 <h3>Editing Existing Content</h3>
 <p>Pages are found under <strong>Pages</strong>, <strong>Team Members</strong>, <strong>Posts</strong>, and <strong>Products</strong> in the left-hand sidebar navigation.</p>
 <div class="img-ph">Your WordPress Sidebar</div>
-
 <h4>Getting to the Editing View</h4>
 <p>Navigate to the correct section and find your page by scrolling or using the search bar. Click the page title to open the editing view, or hover over it and click <strong>Edit</strong>.</p>
 <div class="img-ph">A page listing with the Edit option visible on hover</div>
-
 <span id="adding-page" class="anc"></span>
 <h3>Adding a New Page</h3>
 <p>Head to the appropriate section (Pages, Posts, Team Members, or Products) and click the small <strong>Add New</strong> button beside the section title.</p>
 <div class="img-ph">The "Add New" button</div>
-
 <h4>Adding a Blog Post or Resource</h4>
 <p>Same process as above. The difference: blog posts and resource pages require a <strong>featured image</strong>, set in the sidebar attributes section.</p>
 <div class="img-ph">The featured image button in the page attributes sidebar</div>
-
 <h4>Blog Post Categories</h4>
 <p>Categories keep posts organized and easy to navigate.</p>
-
 <h5>Adding a New Category</h5>
 <ol>
   <li>Go to <strong>Posts → Categories</strong> in WP-Admin.</li>
@@ -201,17 +167,14 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li>Optionally set a <strong>Parent Category</strong> for subcategories.</li>
   <li>Click <strong>Add New Category</strong>.</li>
 </ol>
-
 <h5>Setting a Default Category</h5>
 <p>Go to <strong>Settings → Writing</strong> and select the <strong>Default Post Category</strong> from the dropdown. All new posts are automatically assigned this category.</p>
-
 <h5>Assigning a Category to a Post</h5>
 <ol>
   <li>Open the post, then open the post settings sidebar.</li>
   <li>Scroll to <strong>Categories</strong> and check the box next to the category you want.</li>
   <li>Click <strong>Save</strong>.</li>
 </ol>
-
 <span id="titles-permalinks" class="anc"></span>
 <h3>Titles vs. Permalinks</h3>
 <p>When you create a page, WordPress auto-generates a permalink (slug) from the title. Once set, the permalink stays the same even if you change the title — meaning the two can differ intentionally.</p>
@@ -221,14 +184,11 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <strong>Important</strong>
   Don't change a permalink after publishing — it will break any existing links to the page and can cause a loss of search traffic. Page titles can be changed freely.
 </div>
-
 <span id="saving" class="anc"></span>
 <h3>Saving Your Work</h3>
 <div class="img-ph">The Save Draft, Preview, and Publish buttons at the top right</div>
-
 <h4>Save Draft</h4>
 <p>Saves your content without publishing it. Use this to save progress or return to a page later.</p>
-
 <h4>Publish</h4>
 <p>Saves and makes your content live. Visibility options:</p>
 <ul>
@@ -241,15 +201,12 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <strong>Published too soon?</strong>
   "Switch to draft" will appear where "Save Draft" was — click it to unpublish.
 </div>
-
 <h4>Preview</h4>
 <p>Opens a new tab showing what the page would look like if published. Use this to check formatting before committing.</p>
-
 <span id="templates" class="anc"></span>
 <h3>Templates</h3>
 <p>Set page templates in the Page Summary sidebar. For most new pages, leave the template as <strong>Default</strong>.</p>
 <div class="img-ph">The template selector in the page attributes sidebar</div>
-
 <h4>Available Templates</h4>
 <ul>
   <li><strong>Default</strong> — Most flexible; use for the majority of pages. Automatically adds a banner block.</li>
@@ -258,7 +215,6 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li><strong>Landing</strong> — For Google Ads landing pages. Removes the main navigation menu.</li>
   <li><strong>Pillar</strong> — Adds a sticky sidebar table of contents for long-form content.</li>
 </ul>
-
 <span id="pillar" class="anc"></span>
 <h3>Adding a Pillar Page</h3>
 <p>The Pillar template creates a sticky sidebar table of contents. To build one:</p>
@@ -269,20 +225,16 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
 </ol>
 <div class="img-ph">Example of a Pillar page with sticky sidebar table of contents</div>
 <p>If you want the sidebar link text to differ from the on-page heading, use the <strong>Alternative Heading</strong> field in the Section Heading block settings.</p>
-
 <span id="parent-page" class="anc"></span>
 <h3>Setting a Parent Page</h3>
 <p>Setting a parent page establishes a hierarchy — for example, <em>About Us</em> as parent and <em>Our Team</em> as a child page. Set this in the <strong>Page Attributes</strong> sidebar. Pages without a parent are treated as top-level pages.</p>
 <div class="img-ph">The Page Attributes section in the right-hand sidebar showing parent page selection</div>
-
 <span id="seo" class="anc"></span>
 <h3>Adding SEO to a Post or Page</h3>
 <p>Your site uses <strong>Yoast SEO</strong>. Most settings are pre-configured, but you should add a custom SEO title and meta description to every new page.</p>
-
 <h4>Snippet Editor</h4>
 <p>Click <strong>Edit snippet</strong> in the Yoast box to set a custom SEO title and meta description — these control how the page appears in Google and Bing search results.</p>
 <div class="img-ph">Yoast SEO box with Snippet Editor open</div>
-
 <h4>Adding Social Share Images (OG Image)</h4>
 <p>Click the Social icon in the Yoast box (open triangle with dots), then click <strong>Upload Image</strong> to set a preview image for social sharing.</p>
 <ul>
@@ -290,30 +242,24 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li><strong>X (Twitter):</strong> 1200 × 675 px</li>
 </ul>
 <div class="img-ph">Adding OpenGraph images in Yoast SEO</div>
-
 <!-- ═══════════════════════════ CONTENT BLOCK GUIDE ═══════════════════════════ -->
 <span id="block-guide" class="anc"></span>
 <h2>Content Block Guide</h2>
-
 <p>Pages are built using modular content blocks in the flex builder. Every new page starts with a <strong>Banner</strong> block added automatically.</p>
 <div class="note">
   <strong>Note</strong>
   If you don't edit the Banner block, it will automatically use the page title as the H1 and display the Basic banner style.
 </div>
-
 <span id="add-block" class="anc"></span>
 <h3>Adding a Block</h3>
 <p>Click the <strong>+ Block Inserter</strong> button, or hover between existing blocks to reveal another inserter. You can also type <code>/</code> to search by block name and press <kbd>Enter</kbd> to insert. Select <strong>Browse All</strong> to scroll through every available block.</p>
 <div class="img-ph">The content block inserter with search bar</div>
-
 <span id="move-block" class="anc"></span>
 <h3>Moving, Removing, or Duplicating a Block</h3>
 <p>Select a block to reveal its toolbar. Use the <strong>up/down arrows</strong> to reorder, or the <strong>six-dot icon</strong> to drag and drop. Click the <strong>three-dot menu</strong> (⋯) to duplicate or delete.</p>
 <div class="img-ph">The content block toolbar and dropdown menu</div>
-
 <span id="reusable" class="anc"></span>
 <h3>Reusable Blocks (Patterns)</h3>
-
 <h4>Create a Reusable Block</h4>
 <ol>
   <li>Select the blocks you want to reuse.</li>
@@ -322,29 +268,23 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li>Choose <strong>Synced</strong> (edits propagate everywhere) or <strong>Unsynced</strong> (edits apply only to that instance).</li>
   <li>Click <strong>Create</strong>.</li>
 </ol>
-
 <h4>Edit a Reusable Block</h4>
 <p>Go to <strong>Appearance → Patterns</strong>, find your pattern, and click the pencil icon. Save when done — synced patterns update everywhere they're used.</p>
-
 <h4>Detach a Reusable Block</h4>
 <p>Select the pattern on a page → click ⋯ in the toolbar → <strong>Detach</strong>. Converts that instance to unsynced, leaving the original untouched.</p>
-
 <span id="link-popup" class="anc"></span>
 <h3>The Link Pop-up</h3>
 <p>Many blocks have a "Select Link" button that opens a link pop-up. To link to a page on your site, search for it using the search box. To link externally, paste the URL directly. Always check <strong>Open link in a new tab</strong> for external links.</p>
 <div class="img-ph">The Link Pop-up showing URL field, link text, and new tab option</div>
-
 <!-- ─── ALL CONTENT BLOCKS ─── -->
 <span id="blocks-ref" class="anc"></span>
 <h3>All Content Blocks</h3>
 <p>Fields marked with a red star are required. All other fields are optional.</p>
-
 <hr>
 <div class="block-tag">Accordion</div>
 <p><em>Used for: FAQs or content that should be hidden/revealed on click.</em></p>
 <p>The <strong>Title</strong> is the clickable heading; <strong>Text</strong> is the revealed content. Add rows with <strong>Add Row</strong>; remove with the − icon. Reorder by drag and drop. Optional light background via dropdown.</p>
 <div class="note"><strong>Using for FAQs?</strong> Check the <strong>FAQ Section</strong> checkbox to add FAQ schema for search engines.</div>
-
 <hr>
 <div class="block-tag">Banner</div>
 <p><em>The first block on every page. Added automatically — you just need to edit it.</em></p>
@@ -355,158 +295,128 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
 </ul>
 <p><strong>Key fields:</strong> Small Title (optional, becomes H1 if used) · Big Title (main H1 if no small title) · Custom Image toggle · Image / Mobile Image · Text Colour (light/dark) · Text Alignment · Body Text (Big Banner only) · Button (Big/Small banners).</p>
 <div class="img-ph">Basic, Small, and Big Banner examples side by side</div>
-
 <hr>
 <div class="block-tag">Career Openings</div>
 <p><em>Automatically pulls and displays current job postings. Not manually editable.</em></p>
 <div class="note"><strong>Note</strong> Careers must be enabled in Theme Settings for listings to appear.</div>
-
 <hr>
 <div class="block-tag">CTA</div>
 <p><em>Used for: Major calls to action such as "Get In Touch."</em></p>
 <p>Use a short H2 + brief description, or a single longer H2. Background colour: Light, Accent, Primary, or Secondary.</p>
-
 <hr>
 <div class="block-tag">CTA (Image)</div>
 <p><em>Used for: Highlighting content and driving users to another page.</em></p>
 <p>Supports one or two CTAs (secondary is always a text link). Overlay colour: Primary or Secondary.</p>
-
 <hr>
 <div class="block-tag">CTA (Mini)</div>
 <p><em>Used for: A small inline call to action — text and button only.</em></p>
 <div class="note"><strong>Note</strong> Use only between regular text blocks, not as a standalone section.</div>
-
 <hr>
 <div class="block-tag">Feature Block</div>
 <p><em>Used for: Highlighting key content with an image or video.</em></p>
 <p>Options: heading + small heading, media type (image or video — video uses an ID + thumbnail), image alignment (left/right), CTA type (button or text link), optional light background.</p>
 <div class="img-ph">Feature block with image left; Feature block with image right</div>
-
 <hr>
 <div class="block-tag">Featured Listings</div>
 <p><em>Used for: Highlighting items from the listings section.</em></p>
 <p>Manually select listings via dropdown, or auto-display 3 or 6 most recent.</p>
-
 <hr>
 <div class="block-tag">Featured Posts</div>
 <p><em>Used for: Highlighting important or recent blog posts.</em></p>
 <p>Manually select posts via dropdown, or auto-display 3 or 6 most recent.</p>
-
 <hr>
 <div class="block-tag">Form</div>
 <p><em>Used for: Adding a Gravity Form to a page.</em></p>
 <p>Select a form from the dropdown (must be created in the Forms section first). Use the <strong>Anchor ID</strong> field to make the form directly linkable — e.g., entering <code>contact</code> means you can link to it with <code>#contact</code>.</p>
-
 <hr>
 <div class="block-tag">Four Column Icons</div>
 <p><em>Used for: Highlighting key features or points with icons.</em></p>
 <p>Each row supports an icon image, heading, text, and optional link. Add/remove rows with Add Row / − icon.</p>
-
 <hr>
 <div class="block-tag">Gallery</div>
 <p><em>Used for: Showcasing clickable images in a grid.</em></p>
 <p>Click <strong>Add to Gallery</strong> to upload or select from the media library. No limit on number of images.</p>
-
 <hr>
 <div class="block-tag">Image (Full Width)</div>
 <p><em>Used for: A full-width image spanning the page.</em></p>
 <p>Toggle <strong>Parallax Effect</strong> for a scroll-based parallax.</p>
-
 <hr>
 <div class="block-tag">Image (Grid)</div>
 <p><em>Used for: A grid of images with text. Text can include links.</em></p>
 <p>Choose left or centre alignment. Add/remove rows with Add Row / − icon.</p>
-
 <hr>
 <div class="block-tag">Image (Large)</div>
 <p><em>Used for: A large but not full-width image.</em></p>
 <p>Add a caption and toggle <strong>Show Caption</strong> to display it below the image.</p>
-
 <hr>
 <div class="block-tag">Intro Text</div>
 <p><em>Used for: Large introductory text immediately below the banner.</em></p>
 <p>Wider line length and larger text than the Text Block. Should be the first content block after the banner.</p>
 <div class="img-ph">Intro Text block example</div>
-
 <hr>
 <div class="block-tag">Logo Carousel</div>
 <p><em>Used for: Displaying partner or client logos in a scrolling carousel.</em></p>
 <p>Each logo can be linked. Add an optional heading + heading link. Add/remove rows with Add Row / − icon.</p>
-
 <hr>
 <div class="block-tag">Section Heading</div>
 <p><em>Used for: Adding a section to a Pillar page's table of contents.</em></p>
 <p>See <a href="#pillar">Adding a Pillar Page</a> above for full details.</p>
-
 <hr>
 <div class="block-tag">Side by Side</div>
 <p><em>Used for: Text alongside an image in a two-column layout.</em></p>
 <p>Image width is fixed; height adjusts to the image orientation. Longer text pairs well with a taller image.</p>
 <div class="img-ph">Side by Side block example</div>
-
 <hr>
 <div class="block-tag">Staggered Fade In Content</div>
 <p><em>Used for: Laying out related concepts, steps, or features with images.</em></p>
 <p>Add a heading and intro text to the block, then add rows. Reorder by drag and drop.</p>
 <div class="img-ph">Staggered Fade In Content block example</div>
-
 <hr>
 <div class="block-tag">Table</div>
 <p><em>Used for: Displaying a TablePress table on the page.</em></p>
 <p>See <a href="#tables">Adding a Table</a> below for full instructions.</p>
-
 <hr>
 <div class="block-tag">Team Members</div>
 <p><em>Automatically pulls and displays team member cards.</em></p>
 <div class="note"><strong>Note</strong> Team Members must be enabled in Theme Settings for this block to display listings.</div>
-
 <hr>
 <div class="block-tag">Testimonial</div>
 <p><em>Used for: Client testimonials.</em></p>
 <p>Required: source name and quote. Optional: source description, photo. If the image field is left blank, no image displays.</p>
-
 <hr>
 <div class="block-tag">Text Block</div>
 <p><em>Used for: Standard body text on a page.</em></p>
 <p>Narrower width and smaller text than Intro Text. Click <strong>Add Link</strong> to add a button below the text. Background options: Light, Accent, Primary, Secondary.</p>
-
 <hr>
 <div class="block-tag">Text With Sidebar</div>
 <p><em>Used for: Body text with a sticky right sidebar.</em></p>
 <p>The sidebar content is managed in Theme Settings (see <a href="#theme-settings">Theme Settings → Sidebar Content</a>). Sidebar background: light or dark.</p>
 <div class="img-ph">Text With Sidebar block showing sticky right sidebar behaviour</div>
-
 <hr>
 <div class="block-tag">Three Column Icons</div>
 <p><em>Used for: Three (or more) highlights or features with icons.</em></p>
 <p>Add columns with <strong>Add Column</strong>. Alignment: left or centre.</p>
-
 <hr>
 <div class="block-tag">Three-Up Info</div>
 <p><em>Used for: Breaking content into distinct sections without imagery.</em></p>
 <p>Add columns with <strong>Add Column</strong>. Supports a light background.</p>
-
 <hr>
 <div class="block-tag">Timeline</div>
 <p><em>Used for: An organizational or historical timeline.</em></p>
 <p>Each item requires a heading and description. Items fade in as the visitor scrolls. Content is centre-aligned by default.</p>
 <div class="note"><strong>Note</strong> For longer text, consider using the Intro Text block with adjusted spacing instead of the Timeline block.</div>
-
 <hr>
 <div class="block-tag">Two-Column Text</div>
 <p><em>Used for: Two columns of text side by side.</em></p>
 <p>Works best for short content where one column contains a list.</p>
-
 <hr>
 <div class="block-tag">Video</div>
 <p><em>Used for: Embedding a YouTube or Vimeo video.</em></p>
 <p>Paste the full video URL. Supports an optional light background.</p>
-
 <!-- ─── TABLES ─── -->
 <span id="tables" class="anc"></span>
 <h3>Adding a Table</h3>
 <p>Tables are managed through <strong>TablePress</strong> in the admin menu.</p>
-
 <h4>Creating a New Table</h4>
 <ol>
   <li>Go to <strong>TablePress → Add New</strong>.</li>
@@ -516,27 +426,21 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li>Click <strong>Save Changes</strong>. Use <strong>Preview</strong> to check the result.</li>
 </ol>
 <div class="note"><strong>To show the table name above the table</strong>, check <strong>Print Table Name</strong> in the table options.</div>
-
 <h4>Importing a Table</h4>
 <p>Go to <strong>TablePress → Import a Table</strong>. Select your source (Excel, CSV, Google Sheets export, etc.) and click <strong>Import Table</strong>. You'll land on the edit page with content pre-filled.</p>
-
 <h4>Inserting a Table into a Page</h4>
 <p>Use the <strong>Table</strong> block and enter the table's ID, or insert the shortcode directly into a text field:</p>
 <div class="code-block">[table id=&lt;ID&gt; /]</div>
 <p>Find a table's ID under <strong>TablePress → Show Shortcode</strong>.</p>
-
 <!-- ═══════════════════════════ BLOCK SETTINGS ═══════════════════════════ -->
 <span id="block-settings" class="anc"></span>
 <h2>Block Settings</h2>
 <p>Every block has a settings panel for adjusting its behaviour.</p>
 <div class="img-ph">The block settings panel</div>
-
 <h3>Hide Block</h3>
 <p>Hides the block from the live site while keeping the content in the backend. Useful for preparing content before it's ready to publish.</p>
-
 <h3>Fade In</h3>
 <p>Applies a fade-in animation as the visitor scrolls down to the block. Triggers once only.</p>
-
 <h3>Spacing</h3>
 <p>Default padding for all blocks:</p>
 <ul>
@@ -544,13 +448,11 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li><strong>Mobile:</strong> 40px top, 24px bottom</li>
 </ul>
 <p>Uncheck <strong>Use Global Settings</strong> to adjust spacing for an individual block. Always update both desktop and mobile values together.</p>
-
 <!-- ═══════════════════════════ PAGE SETTINGS ═══════════════════════════ -->
 <span id="page-settings" class="anc"></span>
 <h2>Page Settings</h2>
 <p>Found below the flex builder. By default, the first block has its top spacing removed and the last block has its bottom spacing removed. Toggle <strong>Remove top spacing from first block</strong> and <strong>Remove bottom spacing from last block</strong> to override this.</p>
 <div class="img-ph">The Page Settings panel below the flex builder</div>
-
 <!-- ═══════════════════════════ ADDING A BUTTON ═══════════════════════════ -->
 <span id="button-shortcode" class="anc"></span>
 <h2>Adding a Button</h2>
@@ -561,30 +463,23 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li><strong>target="_blank"</strong> — opens in a new tab; use <code>_self</code> to open in the same tab</li>
   <li><strong>Button Text</strong> — the text that appears on the button</li>
 </ul>
-
 <!-- ═══════════════════════════ THEME SETTINGS ═══════════════════════════ -->
 <span id="theme-settings" class="anc"></span>
 <h2>Theme Settings</h2>
 <p>Controls site-wide settings including logo, contact info, footer content, and the 404 page.</p>
-
 <h3>General</h3>
 <p>Update: logo, navigation background colour, favicon, breadcrumb icon, GTM container ID, Google Maps API key, Directions link, and footer contact information (phone, fax, email, address).</p>
-
 <h3>Content</h3>
 <ul>
   <li><strong>Optional Footer Text</strong> — appears before the copyright line in the footer.</li>
   <li><strong>Sidebar Content</strong> — content for the Text With Sidebar block; set background colour to light or dark.</li>
 </ul>
-
 <h3>Spacing</h3>
 <p>Adjust the global block padding defaults for all pages, posts, and pillar pages.</p>
-
 <h3>Colours / Buttons / Fonts</h3>
 <p>These have been configured per your brand and accessibility guidelines. Do not adjust without consulting us.</p>
-
 <h3>Newsletter</h3>
 <p>Edit the newsletter drawer headline. Toggle <strong>Show Newsletter Link</strong> to add a footer link to the drawer, and set its label in the <strong>Newsletter Text</strong> field. Link to the newsletter drawer anywhere by using <code>#newsletter</code> as the URL.</p>
-
 <h3>Custom Post Types</h3>
 <p>Toggle to enable Team Members, Products, Careers, Listings, and other custom post types. Default archive URLs:</p>
 <ul>
@@ -592,21 +487,16 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li><code>/courses</code> · <code>/products</code> · <code>/services</code> · <code>/locations</code></li>
 </ul>
 <p>To customize an archive page, create a new page with your content and assign it in Theme Settings — the URL will update to match that page.</p>
-
 <h3>Menu</h3>
 <p>Toggle <strong>Show secondary menu</strong> to display the utility nav (smaller menu above the main navigation on desktop).</p>
-
 <h3>Social Media</h3>
 <p>Add, remove, or edit social links that appear in the footer. For platforms not in the dropdown, select <strong>Other</strong> and enter the <a href="https://fontawesome.com/search?o=r&f=brands" target="_blank">Font Awesome brand icon name</a>.</p>
-
 <h3>404 Page</h3>
 <p>Edit the 404 page image, copy, text colour, and overlay from here.</p>
-
 <!-- ═══════════════════════════ MENUS ═══════════════════════════ -->
 <span id="menus" class="anc"></span>
 <h2>Editing the Header &amp; Footer Menus</h2>
 <p>Found under <strong>Appearance → Menus</strong>. Administrative access only.</p>
-
 <h3>Your Site's Menus</h3>
 <ul>
   <li><strong>Main Menu</strong> — Primary navigation on desktop and mobile. Don't adjust without consulting us.</li>
@@ -614,7 +504,6 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li><strong>Secondary Menu</strong> — Utility nav above the main menu on desktop.</li>
   <li><strong>Short Footer Menu</strong> — Links to the right of the copyright line.</li>
 </ul>
-
 <h3>Adding a New Menu Item</h3>
 <ol>
   <li>Select the correct menu to edit.</li>
@@ -625,21 +514,16 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <strong>Sub-items</strong>
   Indented items appear as dropdown sub-menu items. Maximum nesting depth is two levels. Nesting only displays in the Main Menu.
 </div>
-
 <h3>Add a Button to the Menu</h3>
 <p>Select <strong>Button</strong> from the "Display As" dropdown on any menu item. We recommend placing it as the last item.</p>
-
 <h3>Add Search to the Menu</h3>
 <p>Add a Custom Link with <code>#</code> as the URL, then select <strong>Search</strong> from the "Display As" dropdown.</p>
-
 <h3>Removing a Menu Item</h3>
 <p>Click the triangle to expand the item → click <strong>Remove</strong> at the bottom left.</p>
-
 <!-- ═══════════════════════════ FORMS ═══════════════════════════ -->
 <span id="forms" class="anc"></span>
 <h2>Forms</h2>
 <p>Forms are created and managed under <strong>Forms</strong> in the left sidebar. <strong>Let us know before creating a new form</strong> so we can set up proper Analytics tracking.</p>
-
 <h3>Changing Where Notification Emails Go</h3>
 <ol>
   <li>Open the form → <strong>Settings → Notifications</strong>.</li>
@@ -648,59 +532,46 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
 </ol>
 <div class="note"><strong>Note</strong> Include <code>{all_fields}</code> in the message body to receive the full form submission in the notification email.</div>
 <p>The <strong>Configure Routing</strong> option lets you conditionally route emails based on what the visitor selected in the form.</p>
-
 <h3>Changing Form Confirmations</h3>
 <p>Edit under <strong>Settings → Confirmations</strong>. Always use the <strong>Text</strong> confirmation type — never "Redirect" or "Page," as those skew Analytics tracking.</p>
-
 <!-- ═══════════════════════════ APPENDIX: DASHBOARD ═══════════════════════════ -->
 <span id="dashboard" class="anc"></span>
 <h2>Appendix: The Dashboard</h2>
 <p>The Dashboard is the admin area you access after logging in. Options available depend on your user role.</p>
-
 <div class="warning">
   <strong>Admin users: read this</strong>
   Administrative accounts must not be used for routine updates — they can make major changes. Do <em>not</em> access: Updates, Plugins, Appearance (except Menus), Tools, Settings, Custom Fields, Theme Settings, or SEO — unless specifically directed to by Kick Point.
 </div>
-
 <p>Admin users may occasionally need to update navigation menus, update contact information, or add a new user. Everything else is managed by a developer.</p>
-
 <!-- ═══════════════════════════ APPENDIX: CONTENT EDITOR ═══════════════════════════ -->
 <span id="content-editor" class="anc"></span>
 <h2>Appendix: The Content Editor</h2>
 <p>The WYSIWYG editor appears in blog posts and in many block fields. It has two modes:</p>
-
 <h3>Visual Editor</h3>
 <p>The default view — works like a word processor. Use it to add text, formatting (bold, italic, lists), images, and links. This is where you'll spend most of your time.</p>
 <div class="note"><strong>Note</strong> If you need to add HTML or a shortcode, switch to the Text Editor — the Visual Editor won't process code correctly.</div>
 <div class="img-ph">The Visual Editor view</div>
-
 <h3>Text Editor</h3>
 <p>The HTML view. Use it to add custom HTML, insert shortcodes, or see what formatting is already applied.</p>
 <div class="img-ph">The Text Editor view</div>
-
 <!-- ═══════════════════════════ APPENDIX: MEDIA LIBRARY ═══════════════════════════ -->
 <span id="media-library" class="anc"></span>
 <h2>Appendix: The Media Library</h2>
 <p>Images, SVGs, and PDFs are managed under <strong>Media</strong> in the left sidebar. Switch between list and grid views using the icons at the upper left.</p>
-
 <h3>Uploading Files</h3>
 <p>Click <strong>Add New</strong> and drag and drop files, or click <strong>Select Files</strong> to upload from your computer.</p>
 <div class="note">
   <strong>File naming</strong>
   Use dashes (<code>-</code>) not spaces or underscores. Avoid accented characters (ä, è) and special characters (%, ^, *, /).
 </div>
-
 <h3>Adding Alt Text</h3>
 <p>Alt text is used by screen readers and helps search engines understand image content. Add it when uploading via the Image block (right sidebar), or via <strong>Media → Library</strong> by clicking the image to edit it.</p>
-
 <!-- ═══════════════════════════ APPENDIX: IMAGE SIZES ═══════════════════════════ -->
 <span id="image-sizes" class="anc"></span>
 <h2>Appendix: Image Size Guide</h2>
 <p>Upload the largest size you have — the theme will resize automatically. Keep file sizes under <strong>1 MB</strong>.</p>
-
 <h3>Optimizing Images Before Upload</h3>
 <p>Use <a href="https://imageoptim.com/mac" target="_blank">ImageOptim (Mac)</a>. Enable lossy minification and set quality to ~70%. The site's WP Smush plugin will do further optimization after upload. Always keep a backup of the original before running ImageOptim.</p>
-
 <table>
   <thead>
     <tr><th>Image</th><th>Format</th><th>Minimum (px)</th><th>Ideal (px)</th><th>Ratio</th></tr>
@@ -732,14 +603,11 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
     <tr><td><strong>X (Twitter) OG</strong></td><td>JPG</td><td>1200 × 675</td><td>1200 × 675</td><td>—</td></tr>
   </tbody>
 </table>
-
 <!-- ═══════════════════════════ APPENDIX: TITLE TAGS ═══════════════════════════ -->
 <span id="title-meta" class="anc"></span>
 <h2>Appendix: Title Tags &amp; Meta Descriptions</h2>
-
 <h3>Page Titles</h3>
 <p>Be compelling and include your target keyword(s). Keep titles between <strong>40–60 characters</strong> so Google doesn't truncate them. Use Title Case. Use <a href="https://moz.com/learn/seo/title-tag" target="_blank">Moz's Title Tag Preview Tool</a> to preview how your title will appear in search results.</p>
-
 <h3>Meta Descriptions</h3>
 <p>Don't directly affect rankings, but a well-written description improves click-through rates. Guidelines:</p>
 <ul>
@@ -748,7 +616,6 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li>Unique for every page</li>
   <li>Active voice; include keywords naturally</li>
 </ul>
-
 <h3>Determining Keywords</h3>
 <ol>
   <li>Think about what someone would Google to find this specific page.</li>
@@ -757,12 +624,10 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li>Weave keywords naturally into the title and page content — don't force awkward phrasing.</li>
   <li>Target different keywords on different pages. Don't compete against yourself.</li>
 </ol>
-
 <!-- ═══════════════════════════ APPENDIX: USERS ═══════════════════════════ -->
 <span id="users" class="anc"></span>
 <h2>Appendix: Adding Users</h2>
 <p>Found under <strong>Users</strong> in the left sidebar. Administrative access only.</p>
-
 <h3>Creating a New User</h3>
 <ol>
   <li>Go to <strong>Users → Add New</strong>.</li>
@@ -772,7 +637,6 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li>Leave <strong>Send User Notification</strong> checked so they receive login instructions.</li>
   <li>Click <strong>Add New User</strong>.</li>
 </ol>
-
 <h3>Removing a User</h3>
 <ol>
   <li>Hover over the user's name on the Users page → click <strong>Delete</strong>.</li>
@@ -782,52 +646,41 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <strong>Warning</strong>
   If you delete a user without reassigning their content, all posts and pages they created will be permanently deleted.
 </div>
-
 <!-- ═══════════════════════════ APPENDIX: LINKS BY HAND ═══════════════════════════ -->
 <span id="links-by-hand" class="anc"></span>
 <h2>Appendix: Adding Links By Hand</h2>
 <p>For text fields without a formatting toolbar, write links using HTML:</p>
 <div class="code-block">Click &lt;a href="https://example.com"&gt;here&lt;/a&gt; to learn more about us.</div>
-
 <h3>Email Link</h3>
 <div class="code-block">mailto:hello@kickpoint.ca</div>
-
 <h3>Phone Number Link</h3>
 <div class="code-block">tel:+15555555555</div>
 <p>No spaces or dashes in the number. Include the country code (<code>+1</code>) for calls from outside your area.</p>
-
 <!-- ═══════════════════════════ APPENDIX: REDIRECTS ═══════════════════════════ -->
 <span id="redirects" class="anc"></span>
 <h2>Appendix: Adding Redirects</h2>
 <p>Redirects are managed under <strong>Tools → Redirection</strong>.</p>
-
 <h3>Redirect a Removed Page</h3>
 <ol>
   <li>In <strong>Add New Redirection</strong>, enter the removed page's path in <strong>Source URL</strong>.<br>Example: strip the domain from <code>https://yoursite.com/case-studies/</code> → enter <code>/case-studies/</code></li>
   <li>Enter the full destination URL in <strong>Target URL</strong>.</li>
   <li>Click <strong>Add Redirection</strong>.</li>
 </ol>
-
 <h3>Redirect for an Updated Permalink</h3>
 <p>When you change a page's slug, the Redirection plugin creates the redirect automatically.</p>
-
 <h3>Vanity URL Redirect</h3>
 <p>The Source URL doesn't have to be a real page — just make sure it doesn't conflict with an existing URL.</p>
-
 <div class="warning">
   <strong>Avoid redirect chains</strong>
   Search for existing redirects before creating new ones. Chains (A→B→C) slow page loads and hurt SEO. If a chain exists, update the first redirect to point directly to the final destination.
 </div>
-
 <br><br>
 <hr>
-<p style="color:var(--muted);font-size:13px;text-align:center;padding-bottom:48px;font-family:'nunito-sans',sans-serif">
+<p style="color:var(--kp-dark);font-size:13px;text-align:center;padding-bottom:48px;font-family:'nunito-sans',sans-serif">
   Prepared by <strong>Kick Point</strong> &nbsp;·&nbsp; <a href="https://kickpoint.ca/" target="_blank">kickpoint.ca</a>
 </p>
-
 </main>
 </div>
-
 <script>
 const anchors = document.querySelectorAll('.anc[id]');
 const links = document.querySelectorAll('.sidebar a');
@@ -842,6 +695,5 @@ const observer = new IntersectionObserver(entries => {
 }, { rootMargin: '-10% 0px -80% 0px' });
 anchors.forEach(a => observer.observe(a));
 </script>
-
 </body>
 </html>
