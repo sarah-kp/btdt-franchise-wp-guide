@@ -24,7 +24,7 @@ body{font-family:'nunito-sans',-apple-system,BlinkMacSystemFont,sans-serif;font-
 .site-header{background:var(--kp-dark);color:#fff;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 .site-header .logo{display:flex;align-items:center;color:#fff;text-decoration:none;line-height:1}
 .site-header .logo svg{display:block;height:28px;width:auto}
-.site-header .doc-label{font-size:13px;color:rgba(255,255,255,.55);font-family:'nunito-sans',sans-serif}
+.site-header .doc-label{font-size:13px;color:#fff;font-family:'nunito-sans',sans-serif}
 /* Layout */
 .layout{display:flex;min-height:calc(100vh - 53px)}
 /* Sidebar */
@@ -50,28 +50,27 @@ a:hover{color:var(--text);text-decoration:none}
 ul,ol{margin:10px 0 14px 22px}
 li{margin-bottom:5px}
 strong{font-weight:700}
-.main img{max-width:100%;height:auto;display:block}
 /* Code */
-code{font-family:'SF Mono',Consolas,'Courier New',monospace;font-size:12.5px;background:var(--kp-light);border:1px solid var(--border);padding:2px 6px;border-radius:4px;color:var(--kp-mid)}
-.code-block{background:#B5FFF5;color:var(--kp-dark);border:1px solid var(--kp-light);padding:16px 20px;border-radius:8px;font-family:'SF Mono',Consolas,monospace;font-size:13px;line-height:1.6;margin:14px 0;overflow-x:auto;white-space:pre}
+code{font-family:'SF Mono',Consolas,'Courier New',monospace;font-size:16px;background:var(--kp-light);border:1px solid var(--border);padding:2px 6px;border-radius:4px;color:var(--kp-mid)}
+.code-block{background:#EEEEEE;color:var(--kp-dark);border:1px solid var(--kp-light);padding:16px 20px;border-radius:8px;font-family:'SF Mono',Consolas,monospace;font-size:13px;line-height:1.6;margin:14px 0;overflow-x:auto;white-space:pre}
 /* Callouts */
-.note{background:#FCEEEF;border-left:4px solid #DB4553;padding:13px 16px;margin:18px 0;border-radius:0 6px 6px 0;font-size:14px}
+.note{background:#FCEEEF;border-left:4px solid #DB4553;padding:13px 16px;margin:18px 0;border-radius:0 6px 6px 0;font-size:16px}
 .note strong{display:block;margin-bottom:3px;color:#DB4553}
 .warning{background:#FEF2F2;border-left:4px solid #EF4444;padding:13px 16px;margin:18px 0;border-radius:0 6px 6px 0;font-size:14px}
 .warning strong{display:block;margin-bottom:3px;color:#B91C1C}
 .tip{background:#EEF6FC;border-left:4px solid var(--kp-accent);padding:13px 16px;margin:18px 0;border-radius:0 6px 6px 0;font-size:14px}
 .tip strong{display:block;margin-bottom:3px;color:var(--kp-mid)}
 /* Image placeholder */
-.img-ph{background:var(--kp-light);border:1.5px dashed #C8C3D8;border-radius:6px;padding:18px;margin:14px 0;text-align:center;color:var(--muted);font-size:12.5px;font-style:italic}
+.img-ph{background:var(--kp-light);border:1.5px dashed #B5B5B5;border-radius:6px;padding:18px;margin:14px 0;text-align:center;color:var(--muted);font-size:16px;font-style:italic}
 .img-ph::before{content:"📸 ";font-style:normal}
 /* Tables */
 table{width:100%;border-collapse:collapse;margin:18px 0;font-size:13.5px}
-th{background:var(--kp-dark);color:#fff;padding:9px 13px;text-align:left;font-weight:700;font-size:12.5px}
+th{background:var(--kp-dark);color:#fff;padding:9px 13px;text-align:left;font-weight:700;font-size:16px}
 td{padding:8px 13px;border-bottom:1px solid var(--border);vertical-align:top}
 tr:nth-child(even) td{background:var(--kp-light)}
 /* Hero */
 .hero{background:var(--kp-light);border-radius:12px;padding:36px 44px;margin-bottom:44px}
-.hero .eyebrow{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--kp-blue);margin-bottom:10px;font-family:'nunito-sans',sans-serif}
+.hero .eyebrow{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#1F1B1B;margin-bottom:10px;font-family:'nunito-sans',sans-serif}
 .hero p{color:var(--muted);font-size:15px;max-width:480px;margin-bottom:0}
 /* Anchor offset */
 .anc{display:block;height:76px;margin-top:-76px;visibility:hidden}
@@ -88,7 +87,7 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <a href="#" class="logo" aria-label="Kick Point">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.33 367.14"><title>KP-Logo-RGB</title><path d="M119.27,245.47A47.77,47.77,0,0,0,111,229a31.17,31.17,0,0,0-12.49-9.43,32.71,32.71,0,0,0-15.74-2.1,47.21,47.21,0,0,0-19.37,6.09,52,52,0,0,0-7.77,5.47,64.48,64.48,0,0,0-6.77,6.76c-.8-2.61-1.61-5.21-2.41-7.82a6.68,6.68,0,0,0-2.88-3.92,8.72,8.72,0,0,0-5.09-1.1l-1.8.1c-6.12.29-12.24.53-18.36.68l-3.23.08C5.75,224,0,234.45,0,234.45s5.75,10.47,15.12,10.27c1.05,0,2.13,0,3.23-.06V367.14q16.27-.43,32.55-1.51V323.86a34.16,34.16,0,0,0,10.49,5.75c3.84,1.31,8.61,1.71,14.27,1.19a43.51,43.51,0,0,0,19-6.22,51.43,51.43,0,0,0,14.69-13.67,66.45,66.45,0,0,0,9.55-19.26,76.59,76.59,0,0,0,3.41-23.1A80.53,80.53,0,0,0,119.27,245.47ZM87.1,288a33.84,33.84,0,0,1-4.35,10.67A19.33,19.33,0,0,1,76.18,305a20.08,20.08,0,0,1-8.28,2.53,23.84,23.84,0,0,1-9-.92,18.32,18.32,0,0,1-8-5.14V255.32a54.39,54.39,0,0,1,4.18-4.74A22.66,22.66,0,0,1,59.66,247,26.57,26.57,0,0,1,65,244.67a30.88,30.88,0,0,1,6.46-1.23,15.22,15.22,0,0,1,7,.93A11.86,11.86,0,0,1,83.9,249a27,27,0,0,1,3.52,9.14,68.61,68.61,0,0,1,1.25,14.35A66.23,66.23,0,0,1,87.1,288Zm150-60.18a39.71,39.71,0,0,0-11.35-15.65A40.22,40.22,0,0,0,208.26,204a61,61,0,0,0-22.56-.15,72.61,72.61,0,0,0-22.72,7.5,63.26,63.26,0,0,0-17.64,13.78,60.26,60.26,0,0,0-11.43,19.2,67.91,67.91,0,0,0-4,23.82,60,60,0,0,0,4,22.89,40.91,40.91,0,0,0,11.43,16.11A41.45,41.45,0,0,0,163,315.74a59.14,59.14,0,0,0,22.72.32,68.88,68.88,0,0,0,22.56-7.67,62.2,62.2,0,0,0,28.82-33.84,70.33,70.33,0,0,0,4-24.14Q241.11,237.51,237.08,227.84Zm-34.85,53.43c-3.53,5.87-9,9.44-16.53,10.65-7.7,1.26-13.32-.5-16.89-5.23s-5.36-12.46-5.36-23.25,1.79-19.06,5.36-24.86S178,229.27,185.7,228q11.24-1.83,16.53,5.14t5.3,23.15Q207.53,272.47,202.23,281.27Zm46.69-86.34q16.26-2.75,32.54-5.4V298.37c-10.85,1.75-21.7,3.57-32.54,5.39Zm138.84,3.52a52.19,52.19,0,0,1,2.42,16.31v69.16q-16.26,1.49-32.53,3.45V218.22q0-8-3.68-12t-10.8-3.09a25,25,0,0,0-10.09,3.66,47.83,47.83,0,0,0-9,7.46v77.56q-16.27,2.32-32.54,4.93V187.91q10.07-1.6,20.15-3.11a8.26,8.26,0,0,1,5.09.61,6,6,0,0,1,2.88,3.68l1.89,6c2.1-2.26,4.27-4.38,6.51-6.39a46.93,46.93,0,0,1,7.18-5.24,46.54,46.54,0,0,1,18-6.07A35.34,35.34,0,0,1,369,178.64a28,28,0,0,1,11.6,7.38A32.77,32.77,0,0,1,387.76,198.45Zm73.57,74.08a47,47,0,0,1-14.16,7.23,61.53,61.53,0,0,1-16.26,2.87,39.28,39.28,0,0,1-13.71-1.58,25.23,25.23,0,0,1-10-5.76,24.81,24.81,0,0,1-6.15-9.57,37.67,37.67,0,0,1-2.09-13V168.92q8.6-13.92,17.2-27.65c5.11-.31,10.22-.56,15.34-.78v31.59c3.54-.15,7.47-.28,11-.37,9.36-.25,15.12,10.22,15.12,10.21s-5.76,10.43-15.12,10.66c-3.52.11-7.45.23-11,.38V248.6a9.88,9.88,0,0,0,1.83,6.17,6,6,0,0,0,5.3,2.28,10.53,10.53,0,0,0,3-.45,12.25,12.25,0,0,0,2.1-.9c.6-.33,1.16-.63,1.69-.88a4.33,4.33,0,0,1,1.83-.4,3.67,3.67,0,0,1,2.36.64,8.54,8.54,0,0,1,1.84,2.11Q456.41,264.82,461.33,272.53ZM95,138.29q15.32,24.33,30.65,48.29-14.7,2-29.39,3.62a14.35,14.35,0,0,1-6.35-.51,8.18,8.18,0,0,1-4.36-3.8Q75.25,167.68,65,149.26a7.24,7.24,0,0,0-3-3.16,10.7,10.7,0,0,0-4.72-.43q-3.15.24-6.29.44v48.17q-16.27,1.08-32.55,1.51V59.57l-3.23.08C5.75,59.84,0,49.35,0,49.35S5.75,39,15.12,38.77l3.23-.09c6.12-.15,12.24-.39,18.36-.68q7.09-.36,14.19-.83v88.05c1.6-.1,3.21-.21,4.81-.33a10.85,10.85,0,0,0,4.67-1.18,9.77,9.77,0,0,0,3.1-3.28q10.29-16.16,20.57-32.52a13.18,13.18,0,0,1,4.25-4.42,14.91,14.91,0,0,1,6.25-1.93q14.91-1.65,29.8-3.64Q110.3,99.16,96.23,120.1a35.78,35.78,0,0,1-4.36,5.31,41,41,0,0,1-5.09,4.3A27.56,27.56,0,0,1,95,138.29Zm37.4-61.46c10.84-1.49,21.69-3.11,32.54-4.78V180.87q-16.28,2.52-32.54,4.8Zm126.52,80.84a67.61,67.61,0,0,1-11.38,7.58,69.42,69.42,0,0,1-11.7,4.81,95,95,0,0,1-11.45,2.73,46.35,46.35,0,0,1-19-.57,37.49,37.49,0,0,1-16-8.32A42,42,0,0,1,178.45,148q-4-9.82-4-23.29a72.49,72.49,0,0,1,3.51-22.54,60.49,60.49,0,0,1,27.4-34,68.1,68.1,0,0,1,23.46-8.27q12.79-2.15,22.46.31a43.07,43.07,0,0,1,17.42,9l-8.61,12.87a23.33,23.33,0,0,1-2.84,3.32,7.46,7.46,0,0,1-3.88,1.7,7.76,7.76,0,0,1-4.35-.43l-4.36-1.84A28.6,28.6,0,0,0,239,83.2a23.58,23.58,0,0,0-8.08.22,25.6,25.6,0,0,0-10.34,4,24.41,24.41,0,0,0-7.19,7.5,34.17,34.17,0,0,0-4.2,10.74,62.91,62.91,0,0,0-1.37,13.61q0,15.63,6,23t16.63,5.57a26,26,0,0,0,9-2.94,34.21,34.21,0,0,0,5.61-4.09c1.55-1.42,3-2.72,4.25-3.93a9.33,9.33,0,0,1,4.89-2.29c2.58-.42,4.54.19,5.87,1.86l9.45,10.07A66.21,66.21,0,0,1,258.89,157.67ZM257,18.6s5.76-11.41,15.12-12.95c1.05-.16,2.14-.35,3.24-.53q9.17-1.5,18.36-2.94Q300.81,1.05,307.9,0V88.05l4.83-.73a11.72,11.72,0,0,0,4.67-1.52,10.94,10.94,0,0,0,3.1-3.49q10.28-16.82,20.56-33.49a13.64,13.64,0,0,1,4.26-4.54,15,15,0,0,1,6.24-2.05q14.93-1.83,29.81-3.31Q367.3,59.65,353.25,80.76a36.88,36.88,0,0,1-4.36,5.36,42.2,42.2,0,0,1-5.09,4.43A26.39,26.39,0,0,1,352,99q15.33,24.15,30.64,48.67-14.7,1.43-29.38,3.22a14.47,14.47,0,0,1-6.35-.4,7.86,7.86,0,0,1-4.36-3.7Q332.25,128.84,322,111.06a6.34,6.34,0,0,0-3-3,10.18,10.18,0,0,0-4.72-.09l-6.3.94v48.15q-16.26,2.46-32.53,5.14V26c-1.1.19-2.19.37-3.24.53C262.77,28.08,257,18.6,257,18.6ZM131.83,54.7V48.52A13.07,13.07,0,0,1,142.8,36q5.83-.86,11.67-1.73c6.06-.9,11,3.23,11,9.3v6.19a13.25,13.25,0,0,1-11,12.64q-5.83.89-11.67,1.72A9.29,9.29,0,0,1,131.83,54.7Z" fill="currentColor"/></svg>
   </a>
-  <span class="doc-label">WordPress Test</span>
+  <span class="doc-label">WordPress Guide</span>
 </header>
 <div class="layout">
 <!-- ── SIDEBAR ── -->
@@ -107,7 +106,7 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <span class="sidebar-label">Content Blocks</span>
   <a href="#block-guide">Content Block Guide</a>
   <a class="sub" href="#add-block">Adding a Block</a>
-  <a class="sub" href="#move-block">Move / Remove Blocks</a>
+  <a class="sub" href="#move-block">Move, Remove, or Duplicate Blocks</a>
   <a class="sub" href="#reusable">Reusable Blocks</a>
   <a class="sub" href="#link-popup">The Link Pop-up</a>
   <a class="sub" href="#blocks-ref">All Content Blocks</a>
@@ -147,18 +146,18 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
 <h2>Adding/Editing Content: Basics</h2>
 <span id="editing-existing" class="anc"></span>
 <h3>Editing Existing Content</h3>
-<p>Pages are found under <strong>Pages</strong>, <strong>Team Members</strong>, <strong>Posts</strong>, and <strong>Products</strong> in the left-hand sidebar navigation.</p>
-<div class="img-ph">Your WordPress Sidebar</div>
+<p>Pages are found under <strong>Pages</strong> or <strong>Posts</strong> in the left-hand sidebar navigation.</p>
+<img src="https://sarah-kp.github.io/btdt-franchise-wp-guide/images/image63.png" alt="Describe what's in the image" style="border-radius:6px;margin:14px 0">
 <h4>Getting to the Editing View</h4>
 <p>Navigate to the correct section and find your page by scrolling or using the search bar. Click the page title to open the editing view, or hover over it and click <strong>Edit</strong>.</p>
-<div class="img-ph">A page listing with the Edit option visible on hover</div>
+<img src="images/dashboard.jpg" style="border-radius:6px;margin:14px 0">
 <span id="adding-page" class="anc"></span>
 <h3>Adding a New Page</h3>
-<p>Head to the appropriate section (Pages, Posts, Team Members, or Products) and click the small <strong>Add New</strong> button beside the section title.</p>
-<div class="img-ph">The "Add New" button</div>
-<h4>Adding a Blog Post or Resource</h4>
-<p>Same process as above. The difference: blog posts and resource pages require a <strong>featured image</strong>, set in the sidebar attributes section.</p>
-<div class="img-ph">The featured image button in the page attributes sidebar</div>
+<p>Head to the appropriate section (Pages or Posts) and click the small <strong>Add New</strong> button beside the section title.</p>
+<img src="images/image26.png" style="border-radius:6px;margin:14px 0">
+<h4>Adding a Blog Post</h4>
+<p>Same process as above. Head to the Posts section and click the small <strong>Add New</strong> button beside the section title.</p>
+ <img src="images/image6.jpg" style="border-radius:6px;margin:14px 0">
 <h4>Blog Post Categories</h4>
 <p>Categories keep posts organized and easy to navigate.</p>
 <h5>Adding a New Category</h5>
@@ -176,18 +175,19 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li>Scroll to <strong>Categories</strong> and check the box next to the category you want.</li>
   <li>Click <strong>Save</strong>.</li>
 </ol>
+  <div class="img-ph">The categories section in the page attributes sidebar</div>
 <span id="titles-permalinks" class="anc"></span>
 <h3>Titles vs. Permalinks</h3>
 <p>When you create a page, WordPress auto-generates a permalink (slug) from the title. Once set, the permalink stays the same even if you change the title — meaning the two can differ intentionally.</p>
-<div class="img-ph">A page title and permalink showing how they can differ</div>
+<img src="images/image78.png" style="border-radius:6px;margin:14px 0">
 <p>Example: the URL is <code>kickpoint.ca/newsletter/</code> while the page title reads <em>A Newsletter You'll Actually Read</em>.</p>
 <div class="note">
-  <strong>Important</strong>
-  Don't change a permalink after publishing — it will break any existing links to the page and can cause a loss of search traffic. Page titles can be changed freely.
+  <strong>Important</strong>Permalinks/Slugs should stay the same once you’ve published a post or page because it’s a major part of how visitors find your content. Changing a permalink can cause broken links and a loss of traffic. However, page titles can be changed as needed. 
+
 </div>
 <span id="saving" class="anc"></span>
 <h3>Saving Your Work</h3>
-<div class="img-ph">The Save Draft, Preview, and Publish buttons at the top right</div>
+<img src="images/image16.png" style="border-radius:6px;margin:14px 0">
 <h4>Save Draft</h4>
 <p>Saves your content without publishing it. Use this to save progress or return to a page later.</p>
 <h4>Publish</h4>
@@ -198,21 +198,20 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li><strong>Password protected</strong> — requires a password to view</li>
 </ul>
 <p>You can set a publish date in the past (backdate) or schedule for the future. After the first publish, this button changes to <strong>Update</strong>.</p>
-<div class="tip">
-  <strong>Published too soon?</strong>
-  "Switch to draft" will appear where "Save Draft" was — click it to unpublish.
+<div class="note">
+  <strong>Note</strong> Published too soon? "Switch to draft" will appear where "Save Draft" was — click it to unpublish.
 </div>
 <h4>Preview</h4>
 <p>Opens a new tab showing what the page would look like if published. Use this to check formatting before committing.</p>
 <span id="templates" class="anc"></span>
 <h3>Templates</h3>
 <p>Set page templates in the Page Summary sidebar. For most new pages, leave the template as <strong>Default</strong>.</p>
-<div class="img-ph">The template selector in the page attributes sidebar</div>
+<img src="images/image19.png" style="border-radius:6px;margin:14px 0">
 <h4>Available Templates</h4>
 <ul>
   <li><strong>Default</strong> — Most flexible; use for the majority of pages. Automatically adds a banner block.</li>
   <li><strong>About</strong> — Same as Default, plus About page schema and an intro text block below the banner.</li>
-  <li><strong>Contact</strong> — Pre-set on the Contact page. Shows contact info on the left and a contact form on the right.</li>
+  <li><strong>Contact</strong> — Shows contact info on the left and a contact form on the right. (Please note: your current contact page uses the default template)</li>
   <li><strong>Landing</strong> — For Google Ads landing pages. Removes the main navigation menu.</li>
   <li><strong>Pillar</strong> — Adds a sticky sidebar table of contents for long-form content.</li>
 </ul>
@@ -224,41 +223,69 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li>Add content blocks below it as needed.</li>
   <li>Repeat for each new section.</li>
 </ol>
-<div class="img-ph">Example of a Pillar page with sticky sidebar table of contents</div>
-<p>If you want the sidebar link text to differ from the on-page heading, use the <strong>Alternative Heading</strong> field in the Section Heading block settings.</p>
-<span id="parent-page" class="anc"></span>
+<img src="images/image38.png" style="border-radius:6px;margin:14px 0">
+<div class="note"><strong>Note</strong> If you want the sidebar link text to differ from the on-page heading, use the Alternative Heading field in the Section Heading block settings.</div>
+<img src="images/image81.jpg" style="border-radius:6px;margin:14px 0">
+  <span id="parent-page" class="anc"></span>
 <h3>Setting a Parent Page</h3>
-<p>Setting a parent page establishes a hierarchy — for example, <em>About Us</em> as parent and <em>Our Team</em> as a child page. Set this in the <strong>Page Attributes</strong> sidebar. Pages without a parent are treated as top-level pages.</p>
-<div class="img-ph">The Page Attributes section in the right-hand sidebar showing parent page selection</div>
+<p>Setting a parent page establishes a hierarchy — for example, <em>About Us</em> as parent and <em>Our Team</em> as a child page. Set this in the <strong>Page Attributes</strong> sidebar. </p>
+<img src="images/image48.png" style="border-radius:6px;margin:14px 0">
+  <p>Pages without a parent are treated as top-level pages.</p>
+  <img src="images/image10.jpg" style="border-radius:6px;margin:14px 0">
 <span id="seo" class="anc"></span>
 <h3>Adding SEO to a Post or Page</h3>
 <p>Your site uses <strong>Yoast SEO</strong>. Most settings are pre-configured, but you should add a custom SEO title and meta description to every new page.</p>
 <h4>Snippet Editor</h4>
 <p>Click <strong>Edit snippet</strong> in the Yoast box to set a custom SEO title and meta description — these control how the page appears in Google and Bing search results.</p>
-<div class="img-ph">Yoast SEO box with Snippet Editor open</div>
+<img src="images/image23.png" style="border-radius:6px;margin:14px 0">
 <h4>Adding Social Share Images (OG Image)</h4>
 <p>Click the Social icon in the Yoast box (open triangle with dots), then click <strong>Upload Image</strong> to set a preview image for social sharing.</p>
 <ul>
   <li><strong>Facebook:</strong> 1200 × 630 px</li>
   <li><strong>X (Twitter):</strong> 1200 × 675 px</li>
 </ul>
-<div class="img-ph">Adding OpenGraph images in Yoast SEO</div>
+<img src="images/yoast-social.png" style="border-radius:6px;margin:14px 0">
 <!-- ═══════════════════════════ CONTENT BLOCK GUIDE ═══════════════════════════ -->
 <span id="block-guide" class="anc"></span>
 <h2>Content Block Guide</h2>
-<p>Pages are built using modular content blocks in the flex builder. Every new page starts with a <strong>Banner</strong> block added automatically.</p>
+<p>Throughout the admin, you will see “Builder” as an option in your templates. This allows you to build out pages using different content blocks. Here’s how it works:
+</p>
+  <p>Any page with a builder has a builder area on the page. When it’s empty, it looks like this:
+</p>
+ <img src="images/image21.png" style="border-radius:6px;margin:14px 0">
+  <p>Every page starts with the banner block. This block is automatically included when you create a new page. 
+</p>
 <div class="note">
   <strong>Note</strong>
   If you don't edit the Banner block, it will automatically use the page title as the H1 and display the Basic banner style.
 </div>
+  <p>If a page has blocks added inside it already, it might look something like this, when the blocks are collapsed:
+</p>
+   <img src="images/image71.png" style="border-radius:6px;margin:14px 0">
+  <p>Or this, if one block is expanded:
+</p>
+      <img src="images/image83.png" style="border-radius:6px;margin:14px 0">
 <span id="add-block" class="anc"></span>
-<h3>Adding a Block</h3>
-<p>Click the <strong>+ Block Inserter</strong> button, or hover between existing blocks to reveal another inserter. You can also type <code>/</code> to search by block name and press <kbd>Enter</kbd> to insert. Select <strong>Browse All</strong> to scroll through every available block.</p>
-<div class="img-ph">The content block inserter with search bar</div>
+<h3>Adding a Content Block</h3>
+<p>To add new content, click the + Block Inserter OR if there are existing blocks, you can hover between the blocks to reveal another + Block Inserter (blue line in the example pictured). Alternatively, you can start typing the blank name in the blank space if you tart by typing / to search for a block and then insert it by pressing the Enter key on your keyboard. </p>
+<img src="images/image28.png" style="border-radius:6px;margin:14px 0">
+  <p>Clicking on the button will show the add block menu with a search bar on top. The most commonly used blocks will also appear.  
+</p>
+  <img src="images/image28.png" style="border-radius:6px;margin:14px 0">
+  <p>You can type in a keyword to quickly search for a specific block. If you don’t want to use the mouse to click on the button, then you can also use a keyboard shortcut. Start by typing / to search for a block and then insert it by pressing the Enter key on your keyboard. Selecting “Browse All” will open a sidebar where you can scroll through all the block options. 
+</p>
+  <img src="images/image9.png" style="border-radius:6px;margin:14px 0">
+  <p>Each block comes with its toolbar that appears on top of the block. The buttons in the toolbar will change depending on the block you are editing. </p>
 <span id="move-block" class="anc"></span>
-<h3>Moving, Removing, or Duplicating a Block</h3>
-<p>Select a block to reveal its toolbar. Use the <strong>up/down arrows</strong> to reorder, or the <strong>six-dot icon</strong> to drag and drop. Click the <strong>three-dot menu</strong> (⋯) to duplicate or delete.</p>
-<div class="img-ph">The content block toolbar and dropdown menu</div>
+<h3>Moving, Removing, or Duplicating a Content Block</h3>
+<p>To remove, duplicate, or move a content block, select the content block and a content block menu will appear. </p>
+<img src="images/image61.png" style="border-radius:6px;margin:14px 0">
+  <ol>
+    <li><strong>Move a Block</strong> - To move a block, click on the up or down arrows to move the content block where you’d like it to appear. Alternatively, you can select the six dots icon () to drag and drop the content block. 
+</li>
+    <li><strong>Remove or Duplicate a Block</strong> - To remove or duplicate a block, click on the three dots () to open another menu. From this menu, you can select delete or duplicate. Alternatively, you can choose to add a block before or after this content block. </li>
+  </ol>
+   <img src="images/image80.png" style="border-radius:6px;margin:14px 0">
 <span id="reusable" class="anc"></span>
 <h3>Reusable Blocks (Patterns)</h3>
 <h4>Create a Reusable Block</h4>
@@ -276,270 +303,458 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
 <span id="link-popup" class="anc"></span>
 <h3>The Link Pop-up</h3>
 <p>Many blocks have a "Select Link" button that opens a link pop-up. To link to a page on your site, search for it using the search box. To link externally, paste the URL directly. Always check <strong>Open link in a new tab</strong> for external links.</p>
-<div class="img-ph">The Link Pop-up showing URL field, link text, and new tab option</div>
+<img src="images/image15.png" style="border-radius:6px;margin:14px 0">>
 <!-- ─── ALL CONTENT BLOCKS ─── -->
 <span id="blocks-ref" class="anc"></span>
 <h3>All Content Blocks</h3>
 <p>Fields marked with a red star are required. All other fields are optional.</p>
 <hr>
-<div class="block-tag">Accordion</div>
-<p><em>Used for: FAQs or content that should be hidden/revealed on click.</em></p>
-<p>The <strong>Title</strong> is the clickable heading; <strong>Text</strong> is the revealed content. Add rows with <strong>Add Row</strong>; remove with the − icon. Reorder by drag and drop. Optional light background via dropdown.</p>
-<div class="note"><strong>Using for FAQs?</strong> Check the <strong>FAQ Section</strong> checkbox to add FAQ schema for search engines.</div>
+<div class="block-tag">Accordion Block</div>
+<p><strong>Used for:</strong> FAQs or content that should be hidden/revealed on click.</p>
+   <div class="img-ph">Image Placeholder</div>
+<p>The To add more content select the “Add Row” button. To remove a row of content select the - icon to the right of the row. The text entered in the “Text” section will only show when the visitor has clicked on the text entered in the “Title” section. </p>
+
+<p>You can reorder the accordion items by dragging and dropping the section you’d like to move. </p>
+
+<div class="note"><strong>Using for FAQs?</strong> Check the FAQ Section checkbox to add FAQ schema for search engines.</div>
 <hr>
-<div class="block-tag">Banner</div>
-<p><em>The first block on every page. Added automatically — you just need to edit it.</em></p>
+<div class="block-tag">Banner Block</div>
+   <div class="img-ph">Image Placeholder</div>
+  <p><strong>Used for:</strong> Introducing the page content.</p>
+<p>This is the first block on every page. It's added automatically when you create a new page. You just need to edit it.</p>
 <ul>
   <li><strong>Basic Banner</strong> — For pages where users expect to get straight to the content (e.g. Contact).</li>
   <li><strong>Small Banner</strong> — For most pages. Text over a background image.</li>
   <li><strong>Big Banner</strong> — Homepage and ad landing pages only. Use sparingly.</li>
 </ul>
-<p><strong>Key fields:</strong> Small Title (optional, becomes H1 if used) · Big Title (main H1 if no small title) · Custom Image toggle · Image / Mobile Image · Text Colour (light/dark) · Text Alignment · Body Text (Big Banner only) · Button (Big/Small banners).</p>
-<div class="img-ph">Basic, Small, and Big Banner examples side by side</div>
+<p><strong>Key fields:</strong> 
+  <ul>
+  <li><strong>Small Title</strong> — This is the small text that appears above the large text. It is optional. When in use, it becomes the H1 (Heading 1) for the page and should be written with SEO in mind.
+ </li>
+  <li><strong>Big Title</strong> — This is the large text that appears below the smaller text (when used). If the small title isn’t used, this text becomes the H1 (Heading 1) and should be written with SEO in mind. If not, you’re free to make this a more marketing-focused message.
+</li>
+  <li><strong>Custom Image</strong> — If you’ve selected “big banner” or “small banner”, you’ll be asked if you want to add a custom image. If the Custom Image is toggled off, the banner will automatically display the featured image on this page/post. Toggle this on to specify a custom image.
+<ul>
+  <li> <strong>Image / Mobile Image</strong> - Select “Add Image” to upload an image from your computer or select an image from the media library. Wide images work better for desktops while taller images work best for mobile devices. 
+There will automatically be a dark overlay added to your image. If you want to remove this, click on the “remove overlay” checkbox (below the rest of the fields).
+</li>
+</ul>
+  </li>
+    <li><strong>Text Colour</strong> - If you have selected a banner type with a background image, you can choose whether you’d like your text to be light or dark depending on what will show best over the image you’ve selected. If you want to use the “dark” text, you will need to remove the overlay on the image (see above).
+</li>
+    <li><strong>Text Alignment</strong> - Choose whether your text is left or centre-aligned.</li>
+    <li><strong>Text </strong> - When using the big banner, you have the option to add text below the H1 (Heading 1). If text isn’t entered then this section won’t show. </li>
+     <li><strong>Button </strong> - This option is only available when using the Big or Small banner. This adds a button to those banner blocks. Select the “Select Link” button. This will open the Link Pop-Up described above. </li>
+</ul>
 <hr>
-<div class="block-tag">Career Openings</div>
-<p><em>Automatically pulls and displays current job postings. Not manually editable.</em></p>
-<div class="note"><strong>Note</strong> Careers must be enabled in Theme Settings for listings to appear.</div>
+<div class="block-tag">Career Openings Block</div>
+ <p><strong> Used for:</strong> Displaying the current career openings. </p>
+   <div class="img-ph">Image Placeholder</div>
+<p>This block automatically pulls and displays the career openings. You will not be able to edit this block. </p>
+<div class="note"><strong>Note</strong> Your website does not currently have careers enabled so right now this listing will be blank if used. If you’d like the careers section to be enabled, please add it using the Theme settings.</div>
 <hr>
-<div class="block-tag">CTA</div>
-<p><em>Used for: Major calls to action such as "Get In Touch."</em></p>
-<p>Use a short H2 + brief description, or a single longer H2. Background colour: Light, Accent, Primary, or Secondary.</p>
+<div class="block-tag">CTA Block </div>
+   <div class="img-ph">Image Placeholder</div>
+<p><strong>Used for: </strong>Major calls to action such as "Get In Touch."</p>
+<p>This block uses the content editor for the heading and text field and the link pop-up for the button. 
+</p>
+  <p>You can choose the background colour of your CTA by selecting one of the following colours from the dropdown menu: Light (Bright Green), Accent (Bright Green), Primary (Black), or Secondary (Blue).  
+</p>
 <hr>
-<div class="block-tag">CTA (Image)</div>
-<p><em>Used for: Highlighting content and driving users to another page.</em></p>
-<p>Supports one or two CTAs (secondary is always a text link). Overlay colour: Primary or Secondary.</p>
+<div class="block-tag">CTA (Image) Block</div>
+<p><strong>Used for:</strong> Highlighting content and driving users to another page.</p>
+   <div class="img-ph">Image Placeholder</div>
+<p>Format the text as needed, and use either one or two CTAs (the secondary CTA will always be a text link). You can also choose from different overlay colours based on your site’s colour palette: Primary (Black) or Secondary (Blue).</p>
 <hr>
-<div class="block-tag">CTA (Mini)</div>
-<p><em>Used for: A small inline call to action — text and button only.</em></p>
+<div class="block-tag">CTA (Mini) Block</div>
+<p><strong>Used for:</strong> Adding a call to action between paragraph text.</p>
+   <div class="img-ph">Image Placeholder</div>
+  <p>This block will add a mini CTA: only text and a button link. The mini CTA uses the content editor for the text field and the link pop-up for the button.</p>
 <div class="note"><strong>Note</strong> Use only between regular text blocks, not as a standalone section.</div>
 <hr>
 <div class="block-tag">Feature Block</div>
-<p><em>Used for: Highlighting key content with an image or video.</em></p>
-<p>Options: heading + small heading, media type (image or video — video uses an ID + thumbnail), image alignment (left/right), CTA type (button or text link), optional light background.</p>
-<div class="img-ph">Feature block with image left; Feature block with image right</div>
+<p><strong>Used for:</strong> Highlighting key content with an image or video.</p>
+  <div class="img-ph">Feature block with image left; Feature block with image right</div>
+<p><strong>Feature Block Options:</strong>
+  <ul> 
+  <li>Add a heading or a small heading (both optional though we recommend always using a heading for this block). </li>
+    <li>Select media type (image or video). 
+<ul>
+  <li>If you select a video, add the video ID and the image added will be the video thumbnail. </li>
+  <li>Select “Add Image” to upload an image from your computer or select an image from the media library. </li>
+</ul>
+    </li>
+    <li>Align the image to the left or the right of the text. </li>
+    <li>Select the CTA type (button or text link).</li>
+    <li>You can add a background colour to this block by selecting “Light” from the dropdown menu. 
+</li>
+  </ul>
 <hr>
-<div class="block-tag">Featured Listings</div>
-<p><em>Used for: Highlighting items from the listings section.</em></p>
-<p>Manually select listings via dropdown, or auto-display 3 or 6 most recent.</p>
+<div class="block-tag">Featured Listings Block</div>
+<p><strong>Used for:</strong> Highlighting items from the listings section of your website. </p>
+  <div class="img-ph">Feature block with image left; Feature block with image right</div>
+<p>You can manually choose which listings to display by selecting “Yes” from the Manually Choose Listings dropdown menu. From there you use the dropdown menu that appears to select from a list of all your listings. Alternatively, you can type the name of the listing for it to appear from the dropdown menu.
+</p>
+<p>To display your most recent posts, select “No” from the Manually Choose Listings dropdown menu. You can then choose to display either 3 or 6 of your listings. You can add a background colour to this block by selecting “Light” from the dropdown menu. 
+</p>
+  <hr>
+<div class="block-tag">Featured Posts Block</div>
+<p><strong>Used for: </strong>Highlighting your most important or most recent blog posts. </p>
+  <div class="img-ph">Image Placeholder</div>
+<p>You can manually choose which posts to display by selecting “Yes” from the Manually Choose Listings dropdown menu. From there you use the dropdown menu that appears to select from a list of all your posts. Alternatively, you can type the name of the post for it to appear from the dropdown menu.</p>
+  <p>To display your most recent posts, select “No” from the Manually Choose Listings dropdown menu. You can then choose to display either 3 or 6 of your most recent posts. You can add a background colour to this block by selecting “Light” from the dropdown menu. 
+</p>
 <hr>
-<div class="block-tag">Featured Posts</div>
-<p><em>Used for: Highlighting important or recent blog posts.</em></p>
-<p>Manually select posts via dropdown, or auto-display 3 or 6 most recent.</p>
+<div class="block-tag">Form Block</div>
+<p><strong>Used for:</strong> Adding a Gravity Form to a page.</p>
+   <div class="img-ph">Image Placeholder</div>
+<p>Select a gravity form from the dropdown menu. For a form to appear in this menu, it must first be created. See the Forms section below for more information.</p>
+  <p>You can add a background colour to this block by selecting “Light” from the dropdown menu. </p>
+<div class="note"><strong>Note</strong> The Anchor ID field is used to be able to create an anchored link to a form. For example, if you enter “contact” in this field, then anywhere you’d like to link to the form should have <code>#contact</code> as the URL. Example: <code>yourwebsite.com/#contact</code></div>
+  <hr>
+<div class="block-tag">Four Column Icons Block</div>
+<p><strong>Used for:</strong> Highlighting key features, important points, etc.</p>
+   <div class="img-ph">Image Placeholder</div>
+<p>To add more content select the “Add Row” button. To remove a row of content select the - icon to the right of the row. Select “Add Image” to upload an image from your computer or select an image from the media library. To remove an image, hover over the image and select the x icon. </p>
+  <p>A link can be added next to the heading to drive users to find out more about this content. You can add a background colour to this block by selecting “Light” from the dropdown menu. 
+</p>
 <hr>
-<div class="block-tag">Form</div>
-<p><em>Used for: Adding a Gravity Form to a page.</em></p>
-<p>Select a form from the dropdown (must be created in the Forms section first). Use the <strong>Anchor ID</strong> field to make the form directly linkable — e.g., entering <code>contact</code> means you can link to it with <code>#contact</code>.</p>
+<div class="block-tag">Gallery Block</div>
+<p><strong>Used for: </strong>Showcasing images that the user can click through.</p>
+   <div class="img-ph">Image Placeholder</div>
+<p>Select the “Add to Gallery” button to upload an image from your computer or select an image from the media library. To remove an image, hover over the image and select the x icon. You can add as many images as you like.</p>
+<div class="note"><strong>Note</strong> All images in the gallery block should be sized the same size to ensure the functionality of this block.</div>
+  <hr>
+<div class="block-tag">Image (Full Width) Block</div>
+<p><strong>Used for:</strong> A full-width image spanning the page.</p>
+   <div class="img-ph">Image Placeholder</div>
+<p>Select the “Add Image” button to upload an image from your computer or select an image from the media library. To remove an image, hover over the image and select the x icon. </p>
+  <p>Toggle “Yes” to the Parallax Effect to enable a parallax effect to this image as users scroll by.</p>
 <hr>
-<div class="block-tag">Four Column Icons</div>
-<p><em>Used for: Highlighting key features or points with icons.</em></p>
-<p>Each row supports an icon image, heading, text, and optional link. Add/remove rows with Add Row / − icon.</p>
+<div class="block-tag">Image (Grid) Grid Block</div>
+<p><strong>Used for:</strong> Adding a grid of images and text to a page.</p>
+   <div class="img-ph">Image Placeholder</div>
+<p>To add more content select the “Add Row” button. To remove a row of content select the - icon to the right of the row.</p>
+  <p>Choose to align content in this block to the left or centre by selecting from the dropdown menu. You can add a background colour to this block by selecting “Light” from the dropdown menu. </p>
+  <div class="note"><strong>Note</strong> You can add links to the text if you need to link off to internal or external pages.</div>
 <hr>
-<div class="block-tag">Gallery</div>
-<p><em>Used for: Showcasing clickable images in a grid.</em></p>
-<p>Click <strong>Add to Gallery</strong> to upload or select from the media library. No limit on number of images.</p>
+<div class="block-tag">Image (Large) Block</div>
+<p><strong>Used for:</strong> Adding a large image to the page (but not as impactful as the “full-width image”).</p>
+<p>Select the “Add Image” button to upload an image from your computer or select an image from the media library. To remove an image, hover over the image and select the x icon. </p>
+  <p>Once uploaded, you will see a form on the right side that lets you add details to the image. Here you can add an image caption. If you’d like this caption to display, toggle “Yes” to Show Caption. </p>
+  
 <hr>
-<div class="block-tag">Image (Full Width)</div>
-<p><em>Used for: A full-width image spanning the page.</em></p>
-<p>Toggle <strong>Parallax Effect</strong> for a scroll-based parallax.</p>
+<div class="block-tag">Intro Text Block</div>
+<p><strong>Used for:</strong> Adding large text to the top of the page to introduce it.</p>
+  <div class="img-ph">Intro Text block example</div>
+<p>The content editor for this block consists of the visual editor and the text editor. Information on that can be found here.</p>
+  <div class="note><strong>Note</strong>The difference between this block and the text block is that this block has a longer line length (wider width) and larger text. This should be used to introduce the page and should appear below the banner.</div>
+
 <hr>
-<div class="block-tag">Image (Grid)</div>
-<p><em>Used for: A grid of images with text. Text can include links.</em></p>
-<p>Choose left or centre alignment. Add/remove rows with Add Row / − icon.</p>
+<div class="block-tag">Logo Carousel Block</div>
+<p><strong>Used for:</strong> Displaying partner or client logos in a scrolling carousel.</p>
+     <div class="img-ph">Image Placeholder</div>
+<p>A link can be added next to the heading to drive users to find out more about this content. Each logo card can also be linked. </p>
+  <p>To add more content select the “Add Row” button. To remove a row of content select the - icon to the right of the row. Select the “Add Image” button to upload an image from your computer or select an image from the media library. To remove an image, hover over the image and select the x icon. You can add a background colour to this block by selecting “Light” from the dropdown menu. 
+</p>
+  <p><strong>Optional:</strong> Add text to the description to have text appear below the image.</p>
 <hr>
-<div class="block-tag">Image (Large)</div>
-<p><em>Used for: A large but not full-width image.</em></p>
-<p>Add a caption and toggle <strong>Show Caption</strong> to display it below the image.</p>
-<hr>
-<div class="block-tag">Intro Text</div>
-<p><em>Used for: Large introductory text immediately below the banner.</em></p>
-<p>Wider line length and larger text than the Text Block. Should be the first content block after the banner.</p>
-<div class="img-ph">Intro Text block example</div>
-<hr>
-<div class="block-tag">Logo Carousel</div>
-<p><em>Used for: Displaying partner or client logos in a scrolling carousel.</em></p>
-<p>Each logo can be linked. Add an optional heading + heading link. Add/remove rows with Add Row / − icon.</p>
-<hr>
-<div class="block-tag">Section Heading</div>
-<p><em>Used for: Adding a section to a Pillar page's table of contents.</em></p>
+<div class="block-tag">Section Heading Block</div>
+<p><strong>Used for:</strong> Adding a heading and link to the Table of Contents of a Pillar page. </p>
 <p>See <a href="#pillar">Adding a Pillar Page</a> above for full details.</p>
 <hr>
-<div class="block-tag">Side by Side</div>
-<p><em>Used for: Text alongside an image in a two-column layout.</em></p>
-<p>Image width is fixed; height adjusts to the image orientation. Longer text pairs well with a taller image.</p>
-<div class="img-ph">Side by Side block example</div>
+<div class="block-tag">Side by Side Block</div>
+<p><strong>Used for:</strong> Text alongside an image in a two-column layout.</p>
+  <div class="img-ph">Side by Side block example</div>
+<p>Select the “Add Image” button to upload an image from your computer or select an image from the media library. To remove an image, hover over the image and select the x icon. The image width is fixed, but the height will depend on the orientation of the photo you upload — longer text may be better suited to a taller image, for example!
+</p>
+  <p>You can add a background colour to this block by selecting “Light” from the dropdown menu. </p>
+
 <hr>
-<div class="block-tag">Staggered Fade In Content</div>
-<p><em>Used for: Laying out related concepts, steps, or features with images.</em></p>
-<p>Add a heading and intro text to the block, then add rows. Reorder by drag and drop.</p>
-<div class="img-ph">Staggered Fade In Content block example</div>
+<div class="block-tag">Staggered Fade In Content Block</div>
+<p><strong>Used for:</strong> Laying out related concepts, steps, or features with images.</p>
+  <div class="img-ph">Staggered Fade In Content block example</div>
+<p>You can add a header and intro text to the block. To add a new row select the “Add Row” button. Reorder the items by dragging and dropping the section you’d like to move. </p>
+
+<p>You can add a background colour to this block by selecting “Light” from the dropdown menu. 
+</p>
+
 <hr>
-<div class="block-tag">Table</div>
-<p><em>Used for: Displaying a TablePress table on the page.</em></p>
+<div class="block-tag">Table Block</div>
+<p><strong>Used for:</strong> Displaying a TablePress table on the page.</p>
+  <div class="img-ph">Image Placeholder</div>
 <p>See <a href="#tables">Adding a Table</a> below for full instructions.</p>
 <hr>
-<div class="block-tag">Team Members</div>
-<p><em>Automatically pulls and displays team member cards.</em></p>
-<div class="note"><strong>Note</strong> Team Members must be enabled in Theme Settings for this block to display listings.</div>
+<div class="block-tag">Team Members Block</div>
+  <p><strong>Used for:</strong> Automatically adding cards of all members of your team to any page.</p>
+<p>This block automatically pulls and displays the team members. Other than the heading, you will not be able to edit this block. </p>
+<div class="note"><strong>Note</strong> Your website does not currently have careers enabled so right now this listing will be blank if used. If you’d like the team's section to be enabled, please add it using the Theme settings. </div>
 <hr>
-<div class="block-tag">Testimonial</div>
-<p><em>Used for: Client testimonials.</em></p>
-<p>Required: source name and quote. Optional: source description, photo. If the image field is left blank, no image displays.</p>
-<hr>
+<div class="block-tag">Testimonial Block</div>
+<p><strong>Used for: </strong>Adding a client testimonial to the page. </p>
+    <div class="img-ph">Image Placeholder</div>
+<p>Each testimonial requires a source name (this is the text that appears bold in the image above) and a quote. Both the source description (this is the text that appears below the bold text) and the image are optional. If these fields are left blank, no image or source description will display on the page. To add an image, select the “Add image” button. To remove an image, hover over the image and select the x icon. 
+</p>
+<p>You can add a background colour to this block by selecting “Light” from the dropdown menu. </p>
+  <hr>
 <div class="block-tag">Text Block</div>
-<p><em>Used for: Standard body text on a page.</em></p>
-<p>Narrower width and smaller text than Intro Text. Click <strong>Add Link</strong> to add a button below the text. Background options: Light, Accent, Primary, Secondary.</p>
+<p><strong>Used for:</strong> Adding basic text to the page.</p>
+<p>The content editor consists of the visual editor and the text editor.</p>
+  <p>
+You can choose the background colour of your CTA by selecting one of the following colours from the dropdown menu: Light (Bright Green), Accent (Bright Green), Primary (Black), or Secondary (Blue).  
+</p>
+  <div class="note"><strong>Note</strong> The difference between this block and the Intro Text block is that this block has a smaller line length (narrow width) and smaller text. </div>
+  <hr>
+<div class="block-tag">Text With Sidebar Block</div>
+<p><strong>Used for:</strong> Adding basic text with a sidebar of information to the right. </p>
+  <div class="img-ph">Text With Sidebar block showing sticky right sidebar behaviour</div>
+<p>This sidebar will scroll to the bottom of the block as the user scrolls down. The content editor consists of the visual editor and the text editor.
+</p>
+<div class="note"><strong>Note</strong>The sidebar content is managed in Theme Settings (see <a href="#theme-settings">Theme Settings → Sidebar Content</a>). Here you can also change the background colour of the sidebar from light to dark.</div>
+
 <hr>
-<div class="block-tag">Text With Sidebar</div>
-<p><em>Used for: Body text with a sticky right sidebar.</em></p>
-<p>The sidebar content is managed in Theme Settings (see <a href="#theme-settings">Theme Settings → Sidebar Content</a>). Sidebar background: light or dark.</p>
-<div class="img-ph">Text With Sidebar block showing sticky right sidebar behaviour</div>
+<div class="block-tag">Three Column Icons Block</div>
+<p><strong>Used for:</strong> Showcasing 3 highlights or features with icons or linking to other pages.</p>
+     <div class="img-ph">Image Placeholder</div>
+<p>To add more content select the “Add Column” button. To remove a row of content select the - icon to the right of the row. Choose to align content in this block to the left or centre by selecting from the dropdown menu. 
+</p>
 <hr>
-<div class="block-tag">Three Column Icons</div>
-<p><em>Used for: Three (or more) highlights or features with icons.</em></p>
-<p>Add columns with <strong>Add Column</strong>. Alignment: left or centre.</p>
+<div class="block-tag">Three-Up Info Block</div>
+<p><strong>Used for:</strong> Breaking content into distinct sections without imagery.</p>
+     <div class="img-ph">Image Placeholder</div>
+<p>To add more content select the “Add Column” button. To remove a row of content select the - icon to the right of the row. You can add a background colour to this block by selecting “Light” from the dropdown menu. 
+</p>
 <hr>
-<div class="block-tag">Three-Up Info</div>
-<p><em>Used for: Breaking content into distinct sections without imagery.</em></p>
-<p>Add columns with <strong>Add Column</strong>. Supports a light background.</p>
+<div class="block-tag">Timeline Block</div>
+<p><strong>Used for:</strong> Adding an organizational or historical timeline.</p>
+     <div class="img-ph">Image Placeholder</div>
+<p>Each item requires an Event Title (heading field) and a Description (text field). To add a new item to the timeline, click on the “Add Row” located at the bottom of this content block. Each item will fade in as the visitor scrolls through the page. </p>
+<div class="note"><strong>Note</strong> The heading and text will automatically be centre-aligned. If the text is longer, we recommend using the Intro Text block and adjusting the spacing settings for both blocks. Information on that can be found under the <a href="#block-settings">Block Settings - Spacing section below</a>. </div>
 <hr>
-<div class="block-tag">Timeline</div>
-<p><em>Used for: An organizational or historical timeline.</em></p>
-<p>Each item requires a heading and description. Items fade in as the visitor scrolls. Content is centre-aligned by default.</p>
-<div class="note"><strong>Note</strong> For longer text, consider using the Intro Text block with adjusted spacing instead of the Timeline block.</div>
-<hr>
-<div class="block-tag">Two-Column Text</div>
-<p><em>Used for: Two columns of text side by side.</em></p>
+<div class="block-tag">Two-Column Text Block</div>
+<p><strong>Used for:</strong> Adding two columns of text. </p>
+     <div class="img-ph">Image Placeholder</div>
 <p>Works best for short content where one column contains a list.</p>
 <hr>
-<div class="block-tag">Video</div>
-<p><em>Used for: Embedding a YouTube or Vimeo video.</em></p>
-<p>Paste the full video URL. Supports an optional light background.</p>
-<!-- ─── TABLES ─── -->
+<div class="block-tag">Video Block</div>
+<p><strong>Used for:</strong> Embedding a YouTube or Vimeo video.</p>
+<p>To embed a video on the page, just simply enter the YouTube or Vimeo URL and you’re good to go! You can add a background colour to this block by selecting “Light” from the dropdown menu. </p>
+<hr>
+  <!-- ─── TABLES ─── -->
 <span id="tables" class="anc"></span>
 <h3>Adding a Table</h3>
-<p>Tables are managed through <strong>TablePress</strong> in the admin menu.</p>
+<p>Your website uses TablePress to create and manage tables. You can add the tables wherever needed using the “table” block.
+</p>
 <h4>Creating a New Table</h4>
+  <p>Create and manage tables by going to the “TablePress” screen in the admin menu (pictured below).</p>
+     <div class="img-ph">Image Placeholder</div>
+  <div class="img-ph">Text With Sidebar block showing sticky right sidebar behaviour</div>
 <ol>
-  <li>Go to <strong>TablePress → Add New</strong>.</li>
-  <li>Enter a name and the number of rows and columns, then click <strong>Add Table</strong>.</li>
-  <li>Fill in the cells. The table is assigned an ID you'll use to insert it.</li>
-  <li>Set options: header row, alternating row colours, sorting, pagination.</li>
-  <li>Click <strong>Save Changes</strong>. Use <strong>Preview</strong> to check the result.</li>
+  <li>Go to TablePress → Add New.</li>
+  <li>Give the table a name and specify the dimensions of your table (number of rows & columns)</li>
+  <li>Start filling out the individual cells of your new table. The interface you use to fill out the table is simple and uncomplicated and is somewhat akin to your average Excel spreadsheet. 
+  <ul>
+    <li>On this page, your table will be assigned an ID and a shortcode you’ll use to add the table to your post or page. </li>
+  </ul></li>
+  <li>Further down on the same page, you can find some basic options, like inserting links/images in your cells, duplicating/deleting selected rows and columns, combining cells, alternating colour by row, enabling sorting/pagination, and more.
+<ul>
+  <li>The plugin automatically assumes that your first row is the header row for the table, but you do have the option to prevent that and even change the last row to a table footer.
+</li>
+</ul>
+  </li>
+  <li>Click the “Save Changes” button, then the “Preview” button at the bottom of the page to get a basic idea of what your table will look like when inserted in a post or page.
+</li>
 </ol>
-<div class="note"><strong>To show the table name above the table</strong>, check <strong>Print Table Name</strong> in the table options.</div>
+     <div class="note"><strong>Note</strong>We recommend turning "off" all options under Table Features for Site Visitors.</div>
+  <div class="img-ph">Image Placeholder</div>
 <h4>Importing a Table</h4>
-<p>Go to <strong>TablePress → Import a Table</strong>. Select your source (Excel, CSV, Google Sheets export, etc.) and click <strong>Import Table</strong>. You'll land on the edit page with content pre-filled.</p>
+  <p>If you’ve already got your data ready (such as an Excel sheet or Google Sheets document) and waiting to go in an external format, you can import it right into the TablePress plugin.
+  </p>
+<ul>
+  <li>Navigate to WP Admin > TablePress > Import a Table</li>
+  <li>On this page, you’ll select your import source.</li>
+  <li>Once you click the “import table” button, you’ll be redirected to the same editing page as when you created your table from scratch. Except for this time, the table name, description, and content have already been filled in. All that remains to do is customize the options down at the bottom.
+</li>
+</ul>
 <h4>Inserting a Table into a Page</h4>
-<p>Use the <strong>Table</strong> block and enter the table's ID, or insert the shortcode directly into a text field:</p>
-<div class="code-block">[table id=&lt;ID&gt; /]</div>
-<p>Find a table's ID under <strong>TablePress → Show Shortcode</strong>.</p>
+  <p>To show one of your tables on a page or post, you can do either of the following:</p>
+  <ol>
+    <li>Use the “table” block and add your table ID.</li>
+    <li>Insert [table id=<strong><ID></strong> /] into the intro text or regular text block.</li>
+  </ol>
+<p>Each table has a unique ID that needs to be adjusted in the content block or the  Shortcode. You can find this code by hovering over the TablePress menu and selecting “Show Shortcode”. Grab this code and copy/paste it into the shortcode content block. </p>
+
 <!-- ═══════════════════════════ BLOCK SETTINGS ═══════════════════════════ -->
 <span id="block-settings" class="anc"></span>
 <h2>Block Settings</h2>
-<p>Every block has a settings panel for adjusting its behaviour.</p>
+<p>Each block has a settings tab that allows you to adjust the block as needed. </p>
 <div class="img-ph">The block settings panel</div>
 <h3>Hide Block</h3>
-<p>Hides the block from the live site while keeping the content in the backend. Useful for preparing content before it's ready to publish.</p>
+<p>Selecting this will hide this specific block from appearing on the page while also keeping the content in the backend. This is useful when you have information that is not ready to publish but you’d still like to prepare the page. </p>
 <h3>Fade In</h3>
-<p>Applies a fade-in animation as the visitor scrolls down to the block. Triggers once only.</p>
+<p>Selecting this will apply a fade-in animation. The block will slowly fade in as the user scrolls down. The block will remain visible if the user scrolls up — it will only fade in once. 
+</p>
 <h3>Spacing</h3>
-<p>Default padding for all blocks:</p>
+<p>All blocks have default padding of:
+</p>
 <ul>
-  <li><strong>Desktop:</strong> 80px top, 40px bottom</li>
-  <li><strong>Mobile:</strong> 40px top, 24px bottom</li>
+  <li><strong>Desktop:</strong> 112px top and bottom</li>
+  <li><strong>Mobile:</strong> 56px top and bottom</li>
 </ul>
-<p>Uncheck <strong>Use Global Settings</strong> to adjust spacing for an individual block. Always update both desktop and mobile values together.</p>
+  <p>This spacing can be adjusted globally in the Theme Settings. For more information on that, see the <a href="#theme-settings">Theme Settings section below</a>. 
+</p>
+<p>This space can be adjusted as needed by moving the spacing slider by unchecking “Use Global Settings”. If you are going to adjust the space settings, please make sure you adjust the spacing on both desktop and mobile. </p>
+  <div class="note"><strong>Note</strong> By default, the top and bottom spacing for the first and last block on the page is removed. See <a href="#theme-settings">Page Settings below for more information</a>. </div>
+
 <!-- ═══════════════════════════ PAGE SETTINGS ═══════════════════════════ -->
 <span id="page-settings" class="anc"></span>
 <h2>Page Settings</h2>
-<p>Found below the flex builder. By default, the first block has its top spacing removed and the last block has its bottom spacing removed. Toggle <strong>Remove top spacing from first block</strong> and <strong>Remove bottom spacing from last block</strong> to override this.</p>
+<p>By default, the first and last blocks on the page have the top and bottom spacing removed, respectively. To adjust this, you can toggle the “Remove top spacing from first block” and “Remove bottom spacing from last block” in the Page Settings section below the flex builder. Selecting No will remove the top or bottom spacing for these blocks. 
+</p>
 <div class="img-ph">The Page Settings panel below the flex builder</div>
 <!-- ═══════════════════════════ ADDING A BUTTON ═══════════════════════════ -->
 <span id="button-shortcode" class="anc"></span>
 <h2>Adding a Button</h2>
-<p>Add a button to any text editor block using this shortcode:</p>
-<div class="code-block">[kpbutton href="URL HERE" class="btn" target="_blank"]Button Text[/kpbutton]</div>
+<p>You can add a button to the text editor of any block by adding this shortcode and adjusting the text in bold below: </p>
+<div class="code-block">[kpbutton href=<strong>"URL HERE"</strong> class="btn" target=<strong>"_blank"</strong>]<strong>Button Text</strong>[/kpbutton]</div>
 <ul>
-  <li><strong>href</strong> — the destination URL</li>
-  <li><strong>target="_blank"</strong> — opens in a new tab; use <code>_self</code> to open in the same tab</li>
-  <li><strong>Button Text</strong> — the text that appears on the button</li>
+  <li><strong>href</strong> — Enter the URL you are linking to in between the quotation marks. </li>
+  <li><strong>target="_blank"</strong> —  If you’d like the link to open in a new window enter _blank in between the quotation marks. If you’d like the link to open in the same window enter _self in between the quotation marks. 
+</li>
+  <li><strong>Button Text</strong> — This is the text that will appear on the button. </li>
 </ul>
 <!-- ═══════════════════════════ THEME SETTINGS ═══════════════════════════ -->
 <span id="theme-settings" class="anc"></span>
 <h2>Theme Settings</h2>
-<p>Controls site-wide settings including logo, contact info, footer content, and the 404 page.</p>
+<p>Many aspects of the website are controlled in the theme settings, including your logo, contact information, some footer settings, and your 404 page. 
+</p>
 <h3>General</h3>
-<p>Update: logo, navigation background colour, favicon, breadcrumb icon, GTM container ID, Google Maps API key, Directions link, and footer contact information (phone, fax, email, address).</p>
+<p>This section is where you can:</p>
+  <ol>
+    <li>Update your site logo</li>
+    <li>The background colour of the navigation
+</li>
+    <li>Favicon and breadcrumb icon</li>
+    <li>Add your Directions link, Google Maps link, your GTM container ID and Google Maps API key
+</li>
+    <li>The contact information (phone, fax, email, address, directions link, Google My Business map) that displays in your footer and on your contact page
+dress).</li>
+  </ol>
+
 <h3>Content</h3>
 <ul>
   <li><strong>Optional Footer Text</strong> — appears before the copyright line in the footer.</li>
   <li><strong>Sidebar Content</strong> — content for the Text With Sidebar block; set background colour to light or dark.</li>
 </ul>
-<h3>Spacing</h3>
-<p>Adjust the global block padding defaults for all pages, posts, and pillar pages.</p>
+<h3>Blocks</h3>
+<p>Each block has settings that adjust the spacing between blocks on a page. Here you can adjust the Global Block Settings for the site for all pages, posts (blogs), and pillar block pages. You can also adjust the spacing settings for individual blocks. </p>
 <h3>Colours / Buttons / Fonts</h3>
 <p>These have been configured per your brand and accessibility guidelines. Do not adjust without consulting us.</p>
 <h3>Newsletter</h3>
-<p>Edit the newsletter drawer headline. Toggle <strong>Show Newsletter Link</strong> to add a footer link to the drawer, and set its label in the <strong>Newsletter Text</strong> field. Link to the newsletter drawer anywhere by using <code>#newsletter</code> as the URL.</p>
-<h3>Custom Post Types</h3>
-<p>Toggle to enable Team Members, Products, Careers, Listings, and other custom post types. Default archive URLs:</p>
-<ul>
-  <li><code>/careers</code> · <code>/listings</code> · <code>/team-members</code> · <code>/events</code></li>
-  <li><code>/courses</code> · <code>/products</code> · <code>/services</code> · <code>/locations</code></li>
-</ul>
-<p>To customize an archive page, create a new page with your content and assign it in Theme Settings — the URL will update to match that page.</p>
+<p>If your website uses a newsletter, this is where you can edit the headline that appears above the form in the newsletter drawer (screenshot below).</p>
+  <div class="img-ph">Image Placeholder</div>
+  <p>Toggling “Show Newsletter Link” will add a link to this newsletter drawer to the footer of your website. Edit the text that appears in the footer in the Newsletter Text field. </p>
+  <h4>Adding a Link to Newsletter Drawer </h4>
+<p>If you would like a link to open the newsletter drawer, either a button or text link, simply enter <code>#newsletter</code> as the URL in the Link Pop-Up described above. </p> 
 <h3>Menu</h3>
-<p>Toggle <strong>Show secondary menu</strong> to display the utility nav (smaller menu above the main navigation on desktop).</p>
+<p>Toggle “Show secondary menu” to show the utility menu. This is the smaller menu that appears above the main navigation, as seen in the screenshot below. </p>
+  <div class="img-ph">Image Placeholder</div>
+  <div class="note"><strong>Note</strong>You’ll need to add content to this menu in the Menus section of the website. Information on that can be <a href="#menus">found here</a>. </div>
 <h3>Social Media</h3>
 <p>Add, remove, or edit social links that appear in the footer. For platforms not in the dropdown, select <strong>Other</strong> and enter the <a href="https://fontawesome.com/search?o=r&f=brands" target="_blank">Font Awesome brand icon name</a>.</p>
-<h3>404 Page</h3>
-<p>Edit the 404 page image, copy, text colour, and overlay from here.</p>
+<h3>Admin</h3>
+<p>Here you can change the colours of your admin dashboard. These are the colours that appear in the backend of the site while you are editing. This should not be adjusted unless necessary. Ask us for assistance if you need help.
+</p>
+    <h3>404 Page</h3>
+<p>The content for your 404-page lives here. You can adjust the image, make content edits, change the text colour (light or dark), and turn on or off the overlay that appears over the image. 
+</p>
 <!-- ═══════════════════════════ MENUS ═══════════════════════════ -->
 <span id="menus" class="anc"></span>
 <h2>Editing the Header &amp; Footer Menus</h2>
-<p>Found under <strong>Appearance → Menus</strong>. Administrative access only.</p>
-<h3>Your Site's Menus</h3>
+<p>This area of the site is only available to Administrative users. You can find Menus under Appearance in the left navigation bar. </p>
+  <div class="img-ph">Image Placeholder</div>
+<p>The Menu section is used to tell the site what to show in the navigation bar and what links to show in the footer. You can add, remove and reorder items from a menu on this screen. All items currently in the menu will appear in the Menu Structure box on the right. 
+</p>
+    <h3>Adding a New Menu</h3>
+    <p>From the 'Appearance' menu on the left-hand side of the Dashboard, select the 'Menus' option to bring up the Menu Editor. From there select the “Create a new menu” text at the top of the page. </p>
+  <div class="img-ph">Image Placeholder</div>
+    <p>Enter a name for your new menu in the Menu Name box and then click the “Create Menu” button. Your new menu has now been created. </p>
+
+<p>Now you need to assign it to a location for this menu to appear on the site. 
+</p>
+  <div class="img-ph">Image Placeholder</div>
+    <p>In the section titled Menu Settings, click the check box for the location where you want your menu to appear. Click the “Save menu” button once you've made your selection.
+</p>
+    <h3>Your Site's Menus</h3>
+    <p>Your site has 4 different menus:
+</p>
+  <div class="img-ph">Image Placeholder</div>
 <ul>
-  <li><strong>Main Menu</strong> — Primary navigation on desktop and mobile. Don't adjust without consulting us.</li>
-  <li><strong>Footer Menu</strong> — Links above the copyright line in the footer.</li>
-  <li><strong>Secondary Menu</strong> — Utility nav above the main menu on desktop.</li>
-  <li><strong>Short Footer Menu</strong> — Links to the right of the copyright line.</li>
+  <li><strong>Main Menu</strong> — The Main Menu is the primary menu on the site on both desktop and mobile devices. This should not be adjusted unless necessary. Ask us for assistance if you need help.</li>
+  <li><strong>Footer Menu</strong> — This menu allows you to change the links in the footer that sit above the Copyright information. It does not allow you to change anything else in the footer. 
+</li>
+  <li><strong>Secondary Menu</strong> — This is the smaller menu that displays above the main menu on desktop devices. It currently displays the "Call Us" link. This should not be adjusted unless necessary. Ask us for assistance if you need help.</li>
+  <li><strong>Short Footer Menu</strong> — This menu allows you to change the links in the footer that side to the right of the Copyright information. It does not allow you to change anything else in the footer. .</li>
 </ul>
 <h3>Adding a New Menu Item</h3>
+   <div class="img-ph">Image Placeholder</div>
 <ol>
   <li>Select the correct menu to edit.</li>
   <li>Find the page in the Pages list on the left and click <strong>Add to Menu</strong>.</li>
   <li>Drag the new item to its correct position in the Menu Structure.</li>
 </ol>
+     <div class="img-ph">Image Placeholder</div>
 <div class="note">
   <strong>Sub-items</strong>
   Indented items appear as dropdown sub-menu items. Maximum nesting depth is two levels. Nesting only displays in the Main Menu.
 </div>
 <h3>Add a Button to the Menu</h3>
 <p>Select <strong>Button</strong> from the "Display As" dropdown on any menu item. We recommend placing it as the last item.</p>
+     <div class="img-ph">Image Placeholder</div>
 <h3>Add Search to the Menu</h3>
 <p>Add a Custom Link with <code>#</code> as the URL, then select <strong>Search</strong> from the "Display As" dropdown.</p>
 <h3>Removing a Menu Item</h3>
 <p>Click the triangle to expand the item → click <strong>Remove</strong> at the bottom left.</p>
+     <div class="img-ph">Image Placeholder</div> 
+  <p>If you remove an item by mistake, you can re-add it from the selections at the left. 
+</p>
 <!-- ═══════════════════════════ FORMS ═══════════════════════════ -->
 <span id="forms" class="anc"></span>
 <h2>Forms</h2>
-<p>Forms are created and managed under <strong>Forms</strong> in the left sidebar. <strong>Let us know before creating a new form</strong> so we can set up proper Analytics tracking.</p>
+<p>Forms can be created and edited by going to the “Forms” section in the left-hand sidebar. It’s best to let us know before you create a new form so we can ensure your Analytics tracking is set properly for your new form.
+</p>
+    <ul>
+      <li>To add a new form, click “add new.”</li>
+<li>Give it a title, a description is not necessary.</li>
+<li>Gravity Forms makes it easy to create new forms and has instructions you can follow on the page itself. </li>
+<li> Make sure you hit “update” when you’re finished adding your fields.
+</li>
+    </ul>
 <h3>Changing Where Notification Emails Go</h3>
 <ol>
   <li>Open the form → <strong>Settings → Notifications</strong>.</li>
   <li>Edit the existing notification or create a new one.</li>
-  <li>In the <strong>Send To</strong> field, add email addresses separated by commas.</li>
+  <li>In the Send To field, add email addresses separated by commas.</li>
+  <li>The “configure routing” option allows you to conditionally send emails based on what choices the visitor made on the form. 
+</li>
+  <li>Below this section, you can add a From Name, From Email, Subject and message.
+</li>
 </ol>
+     <div class="img-ph">Image Placeholder</div>
 <div class="note"><strong>Note</strong> Include <code>{all_fields}</code> in the message body to receive the full form submission in the notification email.</div>
 <p>The <strong>Configure Routing</strong> option lets you conditionally route emails based on what the visitor selected in the form.</p>
 <h3>Changing Form Confirmations</h3>
-<p>Edit under <strong>Settings → Confirmations</strong>. Always use the <strong>Text</strong> confirmation type — never "Redirect" or "Page," as those skew Analytics tracking.</p>
+<p>Confirmations are displayed for the user on the site after they submit the form. They can be edited in the “Confirmations” area of the Settings for a particular form.
+</p>
+    <p>You can edit the default confirmation, or add a new one. You can have multiple confirmations if you’d like to use conditional formatting and show users different conformations depending on what they have chosen in their form. You need to have more than one confirmation created for this option to display.</p>
+    <p>Simply add text into the “message” box and hit save confirmation. Do not use the “redirect” or “page” confirmation type. Always use “text.” Otherwise, tracking will be skewed in Analytics.
+</p>
 <!-- ═══════════════════════════ APPENDIX: DASHBOARD ═══════════════════════════ -->
 <span id="dashboard" class="anc"></span>
 <h2>Appendix: The Dashboard</h2>
 <p>The Dashboard is the admin area you access after logging in. Options available depend on your user role.</p>
-<div class="warning">
+     <div class="img-ph">Image Placeholder</div>
+<div class="note">
   <strong>Admin users: read this</strong>
   Administrative accounts must not be used for routine updates — they can make major changes. Do <em>not</em> access: Updates, Plugins, Appearance (except Menus), Tools, Settings, Custom Fields, Theme Settings, or SEO — unless specifically directed to by Kick Point.
 </div>
@@ -558,14 +773,17 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
 <!-- ═══════════════════════════ APPENDIX: MEDIA LIBRARY ═══════════════════════════ -->
 <span id="media-library" class="anc"></span>
 <h2>Appendix: The Media Library</h2>
+     <div class="img-ph">Image Placeholder</div>
 <p>Images, SVGs, and PDFs are managed under <strong>Media</strong> in the left sidebar. Switch between list and grid views using the icons at the upper left.</p>
 <h3>Uploading Files</h3>
+  <div class="img-ph">Image Placeholder</div>
 <p>Click <strong>Add New</strong> and drag and drop files, or click <strong>Select Files</strong> to upload from your computer.</p>
 <div class="note">
   <strong>File naming</strong>
   Use dashes (<code>-</code>) not spaces or underscores. Avoid accented characters (ä, è) and special characters (%, ^, *, /).
 </div>
 <h3>Adding Alt Text</h3>
+  <div class="img-ph">Image Placeholder</div>
 <p>Alt text is used by screen readers and helps search engines understand image content. Add it when uploading via the Image block (right sidebar), or via <strong>Media → Library</strong> by clicking the image to edit it.</p>
 <!-- ═══════════════════════════ APPENDIX: IMAGE SIZES ═══════════════════════════ -->
 <span id="image-sizes" class="anc"></span>
@@ -573,7 +791,8 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
 <p>Upload the largest size you have — the theme will resize automatically. Keep file sizes under <strong>1 MB</strong>.</p>
 <h3>Optimizing Images Before Upload</h3>
 <p>Use <a href="https://imageoptim.com/mac" target="_blank">ImageOptim (Mac)</a>. Enable lossy minification and set quality to ~70%. The site's WP Smush plugin will do further optimization after upload. Always keep a backup of the original before running ImageOptim.</p>
-<table>
+<div class="img-ph">Image Placeholder</div>
+  <table>
   <thead>
     <tr><th>Image</th><th>Format</th><th>Minimum (px)</th><th>Ideal (px)</th><th>Ratio</th></tr>
   </thead>
@@ -629,6 +848,7 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
 <span id="users" class="anc"></span>
 <h2>Appendix: Adding Users</h2>
 <p>Found under <strong>Users</strong> in the left sidebar. Administrative access only.</p>
+  
 <h3>Creating a New User</h3>
 <ol>
   <li>Go to <strong>Users → Add New</strong>.</li>
@@ -643,7 +863,7 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
   <li>Hover over the user's name on the Users page → click <strong>Delete</strong>.</li>
   <li>On the Delete User screen, assign their content to another user before confirming.</li>
 </ol>
-<div class="warning">
+<div class="note">
   <strong>Warning</strong>
   If you delete a user without reassigning their content, all posts and pages they created will be permanently deleted.
 </div>
@@ -671,14 +891,14 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
 <p>When you change a page's slug, the Redirection plugin creates the redirect automatically.</p>
 <h3>Vanity URL Redirect</h3>
 <p>The Source URL doesn't have to be a real page — just make sure it doesn't conflict with an existing URL.</p>
-<div class="warning">
+<div class="note">
   <strong>Avoid redirect chains</strong>
   Search for existing redirects before creating new ones. Chains (A→B→C) slow page loads and hurt SEO. If a chain exists, update the first redirect to point directly to the final destination.
 </div>
 <br><br>
 <hr>
 <p style="color:var(--kp-dark);font-size:13px;text-align:center;padding-bottom:48px;font-family:'nunito-sans',sans-serif">
-  Prepared by <strong>Kick Point</strong> &nbsp;·&nbsp; <a href="https://kickpoint.ca/" target="_blank">kickpoint.ca</a>
+  Prepared by <strong><a href="https://kickpoint.ca/" target="_blank">Kick Point</a></strong> for Bin There Dump That &nbsp;·&nbsp; Last Updated: August 2026
 </p>
 </main>
 </div>
