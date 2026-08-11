@@ -81,6 +81,9 @@ hr{border:none;border-top:1px solid var(--border);margin:36px 0}
 @media(max-width:900px){.sidebar{display:none}.main{padding:32px 20px}}
 @media print{.sidebar,.site-header{display:none}.main{padding:0}}
 img{max-width:100%;height:auto;border:2px solid #EEEEEE}
+.img-figure{text-align:center;margin-bottom:14px}
+.img-caption{margin-top:8px;font-size:14px;font-style:italic;font-weight:700;color:#00a0df}
+p:has(+ .img-figure){margin-bottom:24px}
 </style>
 </head>
 <body>
@@ -149,17 +152,17 @@ img{max-width:100%;height:auto;border:2px solid #EEEEEE}
 <span id="editing-existing" class="anc"></span>
 <h3>Editing Existing Content</h3>
 <p>Pages are found under <strong>Pages</strong> or <strong>Posts</strong> in the left-hand sidebar navigation.</p>
-<img src="https://sarah-kp.github.io/btdt-franchise-wp-guide/images/image63.png" alt="Describe what's in the image" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="https://sarah-kp.github.io/btdt-franchise-wp-guide/images/image63.png" alt="Describe what's in the image" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <h4>Getting to the Editing View</h4>
 <p>Navigate to the correct section and find your page by scrolling or using the search bar. Click the page title to open the editing view, or hover over it and click <strong>Edit</strong>.</p>
-<img src="images/dashboard.jpg" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/dashboard.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <span id="adding-page" class="anc"></span>
 <h3>Adding a New Page</h3>
 <p>Head to the appropriate section (Pages or Posts) and click the small <strong>Add New</strong> button beside the section title.</p>
-<img src="images/image26.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image26.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <h4>Adding a Blog Post</h4>
 <p>Same process as above. Head to the Posts section and click the small <strong>Add New</strong> button beside the section title.</p>
- <img src="images/image6.jpg" style="border-radius:6px;margin:14px 0">
+ <figure class="img-figure"><img src="images/image6.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <h4>Blog Post Categories</h4>
 <p>Categories keep posts organized and easy to navigate.</p>
 <h5>Adding a New Category</h5>
@@ -181,7 +184,7 @@ img{max-width:100%;height:auto;border:2px solid #EEEEEE}
 <span id="titles-permalinks" class="anc"></span>
 <h3>Titles vs. Permalinks</h3>
 <p>When you create a page, WordPress auto-generates a permalink (slug) from the title. Once set, the permalink stays the same even if you change the title — meaning the two can differ intentionally.</p>
-<img src="images/image78.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image78.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>Example: the URL is <code>kickpoint.ca/newsletter/</code> while the page title reads <em>A Newsletter You'll Actually Read</em>.</p>
 <div class="note">
   <strong>Important</strong>Permalinks/Slugs should stay the same once you’ve published a post or page because it’s a major part of how visitors find your content. Changing a permalink can cause broken links and a loss of traffic. However, page titles can be changed as needed. 
@@ -189,7 +192,7 @@ img{max-width:100%;height:auto;border:2px solid #EEEEEE}
 </div>
 <span id="saving" class="anc"></span>
 <h3>Saving Your Work</h3>
-<img src="images/image16.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image16.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <h4>Save Draft</h4>
 <p>Saves your content without publishing it. Use this to save progress or return to a page later.</p>
 <h4>Publish</h4>
@@ -208,7 +211,7 @@ img{max-width:100%;height:auto;border:2px solid #EEEEEE}
 <span id="templates" class="anc"></span>
 <h3>Templates</h3>
 <p>Set page templates in the Page Summary sidebar. For most new pages, leave the template as <strong>Default</strong>.</p>
-<img src="images/image19.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image19.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <h4>Available Templates</h4>
 <ul>
   <li><strong>Default</strong> — Most flexible; use for the majority of pages. Automatically adds a banner block.</li>
@@ -225,28 +228,28 @@ img{max-width:100%;height:auto;border:2px solid #EEEEEE}
   <li>Add content blocks below it as needed.</li>
   <li>Repeat for each new section.</li>
 </ol>
-<img src="images/image38.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image38.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <div class="note"><strong>Note</strong> If you want the sidebar link text to differ from the on-page heading, use the Alternative Heading field in the Section Heading block settings.</div>
-<img src="images/image81.jpg" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image81.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <span id="parent-page" class="anc"></span>
 <h3>Setting a Parent Page</h3>
 <p>Setting a parent page establishes a hierarchy — for example, <em>About Us</em> as parent and <em>Our Team</em> as a child page. Set this in the <strong>Page Attributes</strong> sidebar. </p>
-<img src="images/image48.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image48.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <p>Pages without a parent are treated as top-level pages.</p>
-  <img src="images/image10.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image10.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <span id="seo" class="anc"></span>
 <h3>Adding SEO to a Post or Page</h3>
 <p>Your site uses <strong>Yoast SEO</strong>. Most settings are pre-configured, but you should add a custom SEO title and meta description to every new page.</p>
 <h4>Snippet Editor</h4>
 <p>Click <strong>Edit snippet</strong> in the Yoast box to set a custom SEO title and meta description — these control how the page appears in Google and Bing search results.</p>
-<img src="images/image23.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image23.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <h4>Adding Social Share Images (OG Image)</h4>
 <p>Click the Social icon in the Yoast box (open triangle with dots), then click <strong>Upload Image</strong> to set a preview image for social sharing.</p>
 <ul>
   <li><strong>Facebook:</strong> 1200 × 630 px</li>
   <li><strong>X (Twitter):</strong> 1200 × 675 px</li>
 </ul>
-<img src="images/yoast-social.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/yoast-social.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <span id="territory-map" class="anc"></span>
 <h3>Territory Map &amp; Hot Markets</h3>
 <p>The Available Territories page uses two separate tools: an interactive territory map plugin, and a row of &ldquo;Hot Markets&rdquo; buttons that link out to individual city pages.</p>
@@ -267,7 +270,7 @@ img{max-width:100%;height:auto;border:2px solid #EEEEEE}
 </p>
   <p>Any page with a builder has a builder area on the page. When it’s empty, it looks like this:
 </p>
- <img src="images/image21.png" style="border-radius:6px;margin:14px 0">
+ <figure class="img-figure"><img src="images/image21.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <p>Every page starts with the banner block. This block is automatically included when you create a new page. 
 </p>
 <div class="note">
@@ -276,31 +279,31 @@ img{max-width:100%;height:auto;border:2px solid #EEEEEE}
 </div>
   <p>If a page has blocks added inside it already, it might look something like this, when the blocks are collapsed:
 </p>
-   <img src="images/image71.png" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image71.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <p>Or this, if one block is expanded:
 </p>
-      <img src="images/image83.png" style="border-radius:6px;margin:14px 0">
+      <figure class="img-figure"><img src="images/image83.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <span id="add-block" class="anc"></span>
 <h3>Adding a Content Block</h3>
 <p>To add new content, click the + Block Inserter OR if there are existing blocks, you can hover between the blocks to reveal another + Block Inserter (blue line in the example pictured). Alternatively, you can start typing the blank name in the blank space if you tart by typing / to search for a block and then insert it by pressing the Enter key on your keyboard. </p>
-<img src="images/image28.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image28.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <p>Clicking on the button will show the add block menu with a search bar on top. The most commonly used blocks will also appear.  
 </p>
-  <img src="images/image28.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image28.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <p>You can type in a keyword to quickly search for a specific block. If you don’t want to use the mouse to click on the button, then you can also use a keyboard shortcut. Start by typing / to search for a block and then insert it by pressing the Enter key on your keyboard. Selecting “Browse All” will open a sidebar where you can scroll through all the block options. 
 </p>
-  <img src="images/image9.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image9.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <p>Each block comes with its toolbar that appears on top of the block. The buttons in the toolbar will change depending on the block you are editing. </p>
 <span id="move-block" class="anc"></span>
 <h3>Moving, Removing, or Duplicating a Content Block</h3>
 <p>To remove, duplicate, or move a content block, select the content block and a content block menu will appear. </p>
-<img src="images/image61.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image61.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <ol>
     <li><strong>Move a Block</strong> - To move a block, click on the up or down arrows to move the content block where you’d like it to appear. Alternatively, you can select the six dots icon () to drag and drop the content block. 
 </li>
     <li><strong>Remove or Duplicate a Block</strong> - To remove or duplicate a block, click on the three dots () to open another menu. From this menu, you can select delete or duplicate. Alternatively, you can choose to add a block before or after this content block. </li>
   </ol>
-   <img src="images/image80.png" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image80.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <span id="reusable" class="anc"></span>
 <h3>Reusable Blocks (Patterns)</h3>
 <h4>Create a Reusable Block</h4>
@@ -318,7 +321,7 @@ img{max-width:100%;height:auto;border:2px solid #EEEEEE}
 <span id="link-popup" class="anc"></span>
 <h3>The Link Pop-up</h3>
 <p>Many blocks have a "Select Link" button that opens a link pop-up. To link to a page on your site, search for it using the search box. To link externally, paste the URL directly. Always check <strong>Open link in a new tab</strong> for external links.</p>
-<img src="images/image15.png" style="border-radius:6px;margin:14px 0">>
+<figure class="img-figure"><img src="images/image15.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>>
 <!-- ─── ALL CONTENT BLOCKS ─── -->
 <span id="blocks-ref" class="anc"></span>
 <h3>All Content Blocks</h3>
@@ -326,7 +329,7 @@ img{max-width:100%;height:auto;border:2px solid #EEEEEE}
 <hr>
 <div class="block-tag">Accordion Block</div>
 <p><strong>Used for:</strong> FAQs or content that should be hidden/revealed on click.</p>
-   <img src="images/image59.jpg" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image59.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>The To add more content select the “Add Row” button. To remove a row of content select the - icon to the right of the row. The text entered in the “Text” section will only show when the visitor has clicked on the text entered in the “Title” section. </p>
 
 <p>You can reorder the accordion items by dragging and dropping the section you’d like to move. </p>
@@ -334,9 +337,9 @@ img{max-width:100%;height:auto;border:2px solid #EEEEEE}
 <div class="note"><strong>Using for FAQs?</strong> Check the FAQ Section checkbox to add FAQ schema for search engines.</div>
 <hr>
 <div class="block-tag">Banner Block</div>
-   <img src="images/image13.jpg" style="border-radius:6px;margin:14px 0">
-   <img src="images/image14.jpg" style="border-radius:6px;margin:14px 0">
-   <img src="images/image60.jpg" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image13.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
+   <figure class="img-figure"><img src="images/image14.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
+   <figure class="img-figure"><img src="images/image60.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <p><strong>Used for:</strong> Introducing the page content.</p>
 <p>This is the first block on every page. It's added automatically when you create a new page. You just need to edit it.</p>
 <ul>
@@ -366,12 +369,12 @@ There will automatically be a dark overlay added to your image. If you want to r
 <hr>
 <div class="block-tag">Career Openings Block</div>
  <p><strong> Used for:</strong> Displaying the current career openings. </p>
-   <img src="images/image44.jpg" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image44.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>This block automatically pulls and displays the career openings. You will not be able to edit this block. </p>
 <div class="note"><strong>Note</strong> Your website does not currently have careers enabled so right now this listing will be blank if used. If you’d like the careers section to be enabled, please add it using the Theme settings.</div>
 <hr>
 <div class="block-tag">CTA Block </div>
-   <img src="images/image8.jpg" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image8.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p><strong>Used for: </strong>Major calls to action such as "Get In Touch."</p>
 <p>This block uses the content editor for the heading and text field and the link pop-up for the button. 
 </p>
@@ -380,19 +383,19 @@ There will automatically be a dark overlay added to your image. If you want to r
 <hr>
 <div class="block-tag">CTA (Image) Block</div>
 <p><strong>Used for:</strong> Highlighting content and driving users to another page.</p>
-   <img src="images/image11.jpg" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image11.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>Format the text as needed, and use either one or two CTAs (the secondary CTA will always be a text link). You can also choose from different overlay colours based on your site’s colour palette: Primary (Black) or Secondary (Blue).</p>
 <hr>
 <div class="block-tag">CTA (Mini) Block</div>
 <p><strong>Used for:</strong> Adding a call to action between paragraph text.</p>
-   <img src="images/image69.jpg" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image69.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <p>This block will add a mini CTA: only text and a button link. The mini CTA uses the content editor for the text field and the link pop-up for the button.</p>
 <div class="note"><strong>Note</strong> Use only between regular text blocks, not as a standalone section.</div>
 <hr>
 <div class="block-tag">Feature Block</div>
 <p><strong>Used for:</strong> Highlighting key content with an image or video.</p>
-  <img src="images/image64.jpg" style="border-radius:6px;margin:14px 0">
-  <img src="images/image29.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image64.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
+  <figure class="img-figure"><img src="images/image29.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p><strong>Feature Block Options:</strong>
   <ul> 
   <li>Add a heading or a small heading (both optional though we recommend always using a heading for this block). </li>
@@ -410,7 +413,7 @@ There will automatically be a dark overlay added to your image. If you want to r
 <hr>
 <div class="block-tag">Featured Listings Block</div>
 <p><strong>Used for:</strong> Highlighting items from the listings section of your website. </p>
-  <img src="images/image30.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image30.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>You can manually choose which listings to display by selecting “Yes” from the Manually Choose Listings dropdown menu. From there you use the dropdown menu that appears to select from a list of all your listings. Alternatively, you can type the name of the listing for it to appear from the dropdown menu.
 </p>
 <p>To display your most recent posts, select “No” from the Manually Choose Listings dropdown menu. You can then choose to display either 3 or 6 of your listings. You can add a background colour to this block by selecting “Light” from the dropdown menu. 
@@ -418,28 +421,28 @@ There will automatically be a dark overlay added to your image. If you want to r
   <hr>
 <div class="block-tag">Featured Posts Block</div>
 <p><strong>Used for: </strong>Highlighting your most important or most recent blog posts. </p>
-  <img src="images/image35.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image35.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>You can manually choose which posts to display by selecting “Yes” from the Manually Choose Listings dropdown menu. From there you use the dropdown menu that appears to select from a list of all your posts. Alternatively, you can type the name of the post for it to appear from the dropdown menu.</p>
   <p>To display your most recent posts, select “No” from the Manually Choose Listings dropdown menu. You can then choose to display either 3 or 6 of your most recent posts. You can add a background colour to this block by selecting “Light” from the dropdown menu. 
 </p>
 <hr>
 <div class="block-tag">Form Block</div>
 <p><strong>Used for:</strong> Adding a Gravity Form to a page.</p>
-   <img src="images/image39.jpg" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image39.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>Select a gravity form from the dropdown menu. For a form to appear in this menu, it must first be created. See the Forms section below for more information.</p>
   <p>You can add a background colour to this block by selecting “Light” from the dropdown menu. </p>
 <div class="note"><strong>Note</strong> The Anchor ID field is used to be able to create an anchored link to a form. For example, if you enter “contact” in this field, then anywhere you’d like to link to the form should have <code>#contact</code> as the URL. Example: <code>yourwebsite.com/#contact</code></div>
   <hr>
 <div class="block-tag">Four Column Icons Block</div>
 <p><strong>Used for:</strong> Highlighting key features, important points, etc.</p>
-   <img src="images/image66.jpg" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image66.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>To add more content select the “Add Row” button. To remove a row of content select the - icon to the right of the row. Select “Add Image” to upload an image from your computer or select an image from the media library. To remove an image, hover over the image and select the x icon. </p>
   <p>A link can be added next to the heading to drive users to find out more about this content. You can add a background colour to this block by selecting “Light” from the dropdown menu. 
 </p>
 <hr>
 <div class="block-tag">Gallery Block</div>
 <p><strong>Used for: </strong>Showcasing images that the user can click through.</p>
-   <img src="images/image5.jpg" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image5.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>Select the “Add to Gallery” button to upload an image from your computer or select an image from the media library. To remove an image, hover over the image and select the x icon. You can add as many images as you like.</p>
 <div class="note"><strong>Note</strong> All images in the gallery block should be sized the same size to ensure the functionality of this block.</div>
   <hr>
@@ -451,7 +454,7 @@ There will automatically be a dark overlay added to your image. If you want to r
 <hr>
 <div class="block-tag">Image (Grid) Grid Block</div>
 <p><strong>Used for:</strong> Adding a grid of images and text to a page.</p>
-   <img src="images/image31.jpg" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image31.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>To add more content select the “Add Row” button. To remove a row of content select the - icon to the right of the row.</p>
   <p>Choose to align content in this block to the left or centre by selecting from the dropdown menu. You can add a background colour to this block by selecting “Light” from the dropdown menu. </p>
   <div class="note"><strong>Note</strong> You can add links to the text if you need to link off to internal or external pages.</div>
@@ -464,14 +467,14 @@ There will automatically be a dark overlay added to your image. If you want to r
 <hr>
 <div class="block-tag">Intro Text Block</div>
 <p><strong>Used for:</strong> Adding large text to the top of the page to introduce it.</p>
-  <img src="images/image40.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image40.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>The content editor for this block consists of the visual editor and the text editor. Information on that can be found here.</p>
   <div class="note><strong>Note</strong>The difference between this block and the text block is that this block has a longer line length (wider width) and larger text. This should be used to introduce the page and should appear below the banner.</div>
 
 <hr>
 <div class="block-tag">Logo Carousel Block</div>
 <p><strong>Used for:</strong> Displaying partner or client logos in a scrolling carousel.</p>
-     <img src="images/image49.jpg" style="border-radius:6px;margin:14px 0">
+     <figure class="img-figure"><img src="images/image49.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>A link can be added next to the heading to drive users to find out more about this content. Each logo card can also be linked. </p>
   <p>To add more content select the “Add Row” button. To remove a row of content select the - icon to the right of the row. Select the “Add Image” button to upload an image from your computer or select an image from the media library. To remove an image, hover over the image and select the x icon. You can add a background colour to this block by selecting “Light” from the dropdown menu. 
 </p>
@@ -483,7 +486,7 @@ There will automatically be a dark overlay added to your image. If you want to r
 <hr>
 <div class="block-tag">Side by Side Block</div>
 <p><strong>Used for:</strong> Text alongside an image in a two-column layout.</p>
-  <img src="images/image55.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image55.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>Select the “Add Image” button to upload an image from your computer or select an image from the media library. To remove an image, hover over the image and select the x icon. The image width is fixed, but the height will depend on the orientation of the photo you upload — longer text may be better suited to a taller image, for example!
 </p>
   <p>You can add a background colour to this block by selecting “Light” from the dropdown menu. </p>
@@ -491,7 +494,7 @@ There will automatically be a dark overlay added to your image. If you want to r
 <hr>
 <div class="block-tag">Staggered Fade In Content Block</div>
 <p><strong>Used for:</strong> Laying out related concepts, steps, or features with images.</p>
-  <img src="images/image32.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image32.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>You can add a header and intro text to the block. To add a new row select the “Add Row” button. Reorder the items by dragging and dropping the section you’d like to move. </p>
 
 <p>You can add a background colour to this block by selecting “Light” from the dropdown menu. 
@@ -500,7 +503,7 @@ There will automatically be a dark overlay added to your image. If you want to r
 <hr>
 <div class="block-tag">Table Block</div>
 <p><strong>Used for:</strong> Displaying a TablePress table on the page.</p>
-  <img src="images/image75.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image75.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>See <a href="#tables">Adding a Table</a> below for full instructions.</p>
 <hr>
 <div class="block-tag">Team Members Block</div>
@@ -510,7 +513,7 @@ There will automatically be a dark overlay added to your image. If you want to r
 <hr>
 <div class="block-tag">Testimonial Block</div>
 <p><strong>Used for: </strong>Adding a client testimonial to the page. </p>
-    <img src="images/image45.jpg" style="border-radius:6px;margin:14px 0">
+    <figure class="img-figure"><img src="images/image45.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>Each testimonial requires a source name (this is the text that appears bold in the image above) and a quote. Both the source description (this is the text that appears below the bold text) and the image are optional. If these fields are left blank, no image or source description will display on the page. To add an image, select the “Add image” button. To remove an image, hover over the image and select the x icon. 
 </p>
 <p>You can add a background colour to this block by selecting “Light” from the dropdown menu. </p>
@@ -525,7 +528,7 @@ You can choose the background colour of your CTA by selecting one of the followi
   <hr>
 <div class="block-tag">Text With Sidebar Block</div>
 <p><strong>Used for:</strong> Adding basic text with a sidebar of information to the right. </p>
-  <img src="images/image52.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image52.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>This sidebar will scroll to the bottom of the block as the user scrolls down. The content editor consists of the visual editor and the text editor.
 </p>
 <div class="note"><strong>Note</strong>The sidebar content is managed in Theme Settings (see <a href="#theme-settings">Theme Settings → Sidebar Content</a>). Here you can also change the background colour of the sidebar from light to dark.</div>
@@ -533,19 +536,19 @@ You can choose the background colour of your CTA by selecting one of the followi
 <hr>
 <div class="block-tag">Three Column Icons Block</div>
 <p><strong>Used for:</strong> Showcasing 3 highlights or features with icons or linking to other pages.</p>
-     <img src="images/image24.jpg" style="border-radius:6px;margin:14px 0">
+     <figure class="img-figure"><img src="images/image24.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>To add more content select the “Add Column” button. To remove a row of content select the - icon to the right of the row. Choose to align content in this block to the left or centre by selecting from the dropdown menu. 
 </p>
 <hr>
 <div class="block-tag">Three-Up Info Block</div>
 <p><strong>Used for:</strong> Breaking content into distinct sections without imagery.</p>
-     <img src="images/image77.jpg" style="border-radius:6px;margin:14px 0">
+     <figure class="img-figure"><img src="images/image77.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>To add more content select the “Add Column” button. To remove a row of content select the - icon to the right of the row. You can add a background colour to this block by selecting “Light” from the dropdown menu. 
 </p>
 <hr>
 <div class="block-tag">Timeline Block</div>
 <p><strong>Used for:</strong> Adding an organizational or historical timeline.</p>
-     <img src="images/image56.jpg" style="border-radius:6px;margin:14px 0">
+     <figure class="img-figure"><img src="images/image56.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>Each item requires an Event Title (heading field) and a Description (text field). To add a new item to the timeline, click on the “Add Row” located at the bottom of this content block. Each item will fade in as the visitor scrolls through the page. </p>
 <div class="note"><strong>Note</strong> The heading and text will automatically be centre-aligned. If the text is longer, we recommend using the Intro Text block and adjusting the spacing settings for both blocks. Information on that can be found under the <a href="#block-settings">Block Settings - Spacing section below</a>. </div>
 <hr>
@@ -565,8 +568,8 @@ You can choose the background colour of your CTA by selecting one of the followi
 </p>
 <h4>Creating a New Table</h4>
   <p>Create and manage tables by going to the “TablePress” screen in the admin menu (pictured below).</p>
-     <img src="images/image4.png" style="border-radius:6px;margin:14px 0">
-  <img src="images/image65.png" style="border-radius:6px;margin:14px 0">
+     <figure class="img-figure"><img src="images/image4.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
+  <figure class="img-figure"><img src="images/image65.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <ol>
   <li>Go to TablePress → Add New.</li>
   <li>Give the table a name and specify the dimensions of your table (number of rows & columns)</li>
@@ -606,7 +609,7 @@ You can choose the background colour of your CTA by selecting one of the followi
 <span id="block-settings" class="anc"></span>
 <h2>Block Settings</h2>
 <p>Each block has a settings tab that allows you to adjust the block as needed. </p>
-<img src="images/image47.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image47.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <h3>Hide Block</h3>
 <p>Selecting this will hide this specific block from appearing on the page while also keeping the content in the backend. This is useful when you have information that is not ready to publish but you’d still like to prepare the page. </p>
 <h3>Fade In</h3>
@@ -623,7 +626,7 @@ You can choose the background colour of your CTA by selecting one of the followi
 </p>
 <p>This space can be adjusted as needed by moving the spacing slider by unchecking “Use Global Settings”. If you are going to adjust the space settings, please make sure you adjust the spacing on both desktop and mobile. </p>
   <div class="note"><strong>Note</strong> By default, the top and bottom spacing for the first and last block on the page is removed. See <a href="#theme-settings">Page Settings below for more information</a>. </div>
-  <img src="images/image70.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image70.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 
 <!-- ═══════════════════════════ PAGE SETTINGS ═══════════════════════════ -->
 <span id="page-settings" class="anc"></span>
@@ -671,13 +674,13 @@ dress).</li>
 <p>These have been configured per your brand and accessibility guidelines. Do not adjust without consulting us.</p>
 <h3>Newsletter</h3>
 <p>If your website uses a newsletter, this is where you can edit the headline that appears above the form in the newsletter drawer (screenshot below).</p>
-  <img src="images/image67.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image67.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <p>Toggling “Show Newsletter Link” will add a link to this newsletter drawer to the footer of your website. Edit the text that appears in the footer in the Newsletter Text field. </p>
   <h4>Adding a Link to Newsletter Drawer </h4>
 <p>If you would like a link to open the newsletter drawer, either a button or text link, simply enter <code>#newsletter</code> as the URL in the Link Pop-Up described above. </p> 
 <h3>Menu</h3>
 <p>Toggle “Show secondary menu” to show the utility menu. This is the smaller menu that appears above the main navigation, as seen in the screenshot below. </p>
-  <img src="images/image27.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image27.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <div class="note"><strong>Note</strong>You’ll need to add content to this menu in the Menus section of the website. Information on that can be <a href="#menus">found here</a>. </div>
 <h3>Social Media</h3>
 <p>Add, remove, or edit social links that appear in the footer. For platforms not in the dropdown, select <strong>Other</strong> and enter the <a href="https://fontawesome.com/search?o=r&f=brands" target="_blank">Font Awesome brand icon name</a>.</p>
@@ -691,23 +694,23 @@ dress).</li>
 <span id="menus" class="anc"></span>
 <h2>Editing the Header &amp; Footer Menus</h2>
 <p>This area of the site is only available to Administrative users. You can find Menus under Appearance in the left navigation bar. </p>
-  <img src="images/image34.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image34.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>The Menu section is used to tell the site what to show in the navigation bar and what links to show in the footer. You can add, remove and reorder items from a menu on this screen. All items currently in the menu will appear in the Menu Structure box on the right. 
 </p>
     <h3>Adding a New Menu</h3>
     <p>From the 'Appearance' menu on the left-hand side of the Dashboard, select the 'Menus' option to bring up the Menu Editor. From there select the “Create a new menu” text at the top of the page. </p>
-  <img src="images/image54.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image54.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
     <p>Enter a name for your new menu in the Menu Name box and then click the “Create Menu” button. Your new menu has now been created. </p>
 
 <p>Now you need to assign it to a location for this menu to appear on the site. 
 </p>
-  <img src="images/image74.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image74.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
     <p>In the section titled Menu Settings, click the check box for the location where you want your menu to appear. Click the “Save menu” button once you've made your selection.
 </p>
     <h3>Your Site's Menus</h3>
     <p>Your site has 4 different menus:
 </p>
-  <img src="images/image43.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image43.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <ul>
   <li><strong>Main Menu</strong> — The Main Menu is the primary menu on the site on both desktop and mobile devices. This should not be adjusted unless necessary. Ask us for assistance if you need help.</li>
   <li><strong>Footer Menu</strong> — This menu allows you to change the links in the footer that sit above the Copyright information. It does not allow you to change anything else in the footer. 
@@ -716,13 +719,13 @@ dress).</li>
   <li><strong>Short Footer Menu</strong> — This menu allows you to change the links in the footer that side to the right of the Copyright information. It does not allow you to change anything else in the footer. .</li>
 </ul>
 <h3>Adding a New Menu Item</h3>
-   <img src="images/image53.jpg" style="border-radius:6px;margin:14px 0">
+   <figure class="img-figure"><img src="images/image53.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <ol>
   <li>Select the correct menu to edit.</li>
   <li>Find the page in the Pages list on the left and click <strong>Add to Menu</strong>.</li>
   <li>Drag the new item to its correct position in the Menu Structure.</li>
 </ol>
-     <img src="images/image3.jpg" style="border-radius:6px;margin:14px 0">
+     <figure class="img-figure"><img src="images/image3.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <div class="note">
   <strong>Sub-items</strong>
   Indented items appear as dropdown sub-menu items. Maximum nesting depth is two levels. Nesting only displays in the Main Menu.
@@ -734,7 +737,7 @@ dress).</li>
 <p>Add a Custom Link with <code>#</code> as the URL, then select <strong>Search</strong> from the "Display As" dropdown.</p>
 <h3>Removing a Menu Item</h3>
 <p>Click the triangle to expand the item → click <strong>Remove</strong> at the bottom left.</p>
-     <img src="images/image33.png" style="border-radius:6px;margin:14px 0">
+     <figure class="img-figure"><img src="images/image33.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <p>If you remove an item by mistake, you can re-add it from the selections at the left. 
 </p>
 <!-- ═══════════════════════════ FORMS ═══════════════════════════ -->
@@ -759,7 +762,7 @@ dress).</li>
   <li>Below this section, you can add a From Name, From Email, Subject and message.
 </li>
 </ol>
-     <img src="images/image51.png" style="border-radius:6px;margin:14px 0">
+     <figure class="img-figure"><img src="images/image51.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <div class="note"><strong>Note</strong> Include <code>{all_fields}</code> in the message body to receive the full form submission in the notification email.</div>
 <p>The <strong>Configure Routing</strong> option lets you conditionally route emails based on what the visitor selected in the form.</p>
 <h3>Changing Form Confirmations</h3>
@@ -767,14 +770,14 @@ dress).</li>
 </p>
     <p>You can edit the default confirmation, or add a new one. You can have multiple confirmations if you’d like to use conditional formatting and show users different conformations depending on what they have chosen in their form. You need to have more than one confirmation created for this option to display.</p>
     <p>Simply add text into the “message” box and hit save confirmation. Do not use the “redirect” or “page” confirmation type. Always use “text.” Otherwise, tracking will be skewed in Analytics.
-  <img src="images/image22.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image22.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 </p>
 <!-- ═══════════════════════════ APPENDIX: DASHBOARD ═══════════════════════════ -->
 <span id="dashboard" class="anc"></span>
 <h2>Appendix: The Dashboard</h2>
 <p>The Dashboard is the admin area you access after logging in. Options available depend on your user role.</p>
-     <img src="images/image17.jpg" style="border-radius:6px;margin:14px 0">
-     <img src="images/image58.png" style="border-radius:6px;margin:14px 0">
+     <figure class="img-figure"><img src="images/image17.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
+     <figure class="img-figure"><img src="images/image58.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <div class="note">
   <strong>Admin users: read this</strong>
   Administrative accounts must not be used for routine updates — they can make major changes. Do <em>not</em> access: Updates, Plugins, Appearance (except Menus), Tools, Settings, Custom Fields, Theme Settings, or SEO — unless specifically directed to by Kick Point.
@@ -787,24 +790,24 @@ dress).</li>
 <h3>Visual Editor</h3>
 <p>The default view — works like a word processor. Use it to add text, formatting (bold, italic, lists), images, and links. This is where you'll spend most of your time.</p>
 <div class="note"><strong>Note</strong> If you need to add HTML or a shortcode, switch to the Text Editor — the Visual Editor won't process code correctly.</div>
-<img src="images/image73.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image73.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <h3>Text Editor</h3>
 <p>The HTML view. Use it to add custom HTML, insert shortcodes, or see what formatting is already applied.</p>
-<img src="images/image37.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image37.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <!-- ═══════════════════════════ APPENDIX: MEDIA LIBRARY ═══════════════════════════ -->
 <span id="media-library" class="anc"></span>
 <h2>Appendix: The Media Library</h2>
-     <img src="images/image42.png" style="border-radius:6px;margin:14px 0">
+     <figure class="img-figure"><img src="images/image42.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>Images, SVGs, and PDFs are managed under <strong>Media</strong> in the left sidebar. Switch between list and grid views using the icons at the upper left.</p>
 <h3>Uploading Files</h3>
-  <img src="images/image62.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image62.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>Click <strong>Add New</strong> and drag and drop files, or click <strong>Select Files</strong> to upload from your computer.</p>
 <div class="note">
   <strong>File naming</strong>
   Use dashes (<code>-</code>) not spaces or underscores. Avoid accented characters (ä, è) and special characters (%, ^, *, /).
 </div>
 <h3>Adding Alt Text</h3>
-  <img src="images/image12.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image12.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>Alt text is used by screen readers and helps search engines understand image content. Add it when uploading via the Image block (right sidebar), or via <strong>Media → Library</strong> by clicking the image to edit it.</p>
 <!-- ═══════════════════════════ APPENDIX: IMAGE SIZES ═══════════════════════════ -->
 <span id="image-sizes" class="anc"></span>
@@ -812,7 +815,7 @@ dress).</li>
 <p>Upload the largest size you have — the theme will resize automatically. Keep file sizes under <strong>1 MB</strong>.</p>
 <h3>Optimizing Images Before Upload</h3>
 <p>Use <a href="https://imageoptim.com/mac" target="_blank">ImageOptim (Mac)</a>. Enable lossy minification and set quality to ~70%. The site's WP Smush plugin will do further optimization after upload. Always keep a backup of the original before running ImageOptim.</p>
-<img src="images/image18.png" style="border-radius:6px;margin:14px 0">
+<figure class="img-figure"><img src="images/image18.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
   <table>
   <thead>
     <tr><th>Image</th><th>Format</th><th>Minimum (px)</th><th>Ideal (px)</th><th>Ratio</th></tr>
@@ -878,13 +881,13 @@ dress).</li>
   <li>Select <strong>Editor</strong> from the Role dropdown (unless you have a specific reason to assign a higher role).</li>
   <li>Leave <strong>Send User Notification</strong> checked so they receive login instructions.</li>
   <li>Click <strong>Add New User</strong>.</li>
-  <img src="images/image79.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image79.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 </ol>
 <h3>Removing a User</h3>
 <ol>
   <li>Hover over the user's name on the Users page → click <strong>Delete</strong>.</li>
   <li>On the Delete User screen, assign their content to another user before confirming.</li>
-  <img src="images/image72.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image72.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 </ol>
 <div class="note">
   <strong>Warning</strong>
@@ -897,22 +900,22 @@ dress).</li>
 <div class="code-block">Click &lt;a href="https://example.com"&gt;here&lt;/a&gt; to learn more about us.</div>
 <h3>Email Link</h3>
 <div class="code-block">mailto:hello@kickpoint.ca</div>
-  <img src="images/image41.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image41.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <h3>Phone Number Link</h3>
 <div class="code-block">tel:+15555555555</div>
-  <img src="images/image82.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image82.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <p>No spaces or dashes in the number. Include the country code (<code>+1</code>) for calls from outside your area.</p>
 <!-- ═══════════════════════════ APPENDIX: REDIRECTS ═══════════════════════════ -->
 <span id="redirects" class="anc"></span>
 <h2>Appendix: Adding Redirects</h2>
 <p>Redirects are managed under <strong>Tools → Redirection</strong>.</p>
-  <img src="images/image57.png" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image57.png" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 <h3>Redirect a Removed Page</h3>
 <ol>
   <li>In <strong>Add New Redirection</strong>, enter the removed page's path in <strong>Source URL</strong>.<br>Example: strip the domain from <code>https://yoursite.com/case-studies/</code> → enter <code>/case-studies/</code></li>
   <li>Enter the full destination URL in <strong>Target URL</strong>.</li>
   <li>Click <strong>Add Redirection</strong>.</li>
-  <img src="images/image50.jpg" style="border-radius:6px;margin:14px 0">
+  <figure class="img-figure"><img src="images/image50.jpg" style="border-radius:6px;margin-top:14px"><figcaption class="img-caption">Image Caption</figcaption></figure>
 </ol>
 <h3>Redirect for an Updated Permalink</h3>
 <p>When you change a page's slug, the Redirection plugin creates the redirect automatically.</p>
